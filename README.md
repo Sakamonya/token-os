@@ -261,6 +261,15 @@ make && make run               # Ctrl-A X 退出
 | 对话原文 | [`docs/conversation.md`](docs/conversation.md)，从早上 7 点开始的每一句 |
 | 内核字节数 | 提交里 `agent.c` 的 631 行，不是事后总结出来的 |
 
+已经做掉的第三方存档，都能独立打开核对：
+
+| 存档 | 指向 |
+|---|---|
+| **Software Heritage** 永久快照 | 快照 ID `swh:1:snp:dafc7b9a15eb65ce73b65c4ddb35e4313ab3ff20`，收录于 2026-11-17 10:24 CST，快照里的 `main` 就是提交 `cb908e0`。[浏览](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/Sakamonya/token-os) |
+| **Internet Archive** 网页快照 | [web.archive.org · 2026-11-17 10:24](https://web.archive.org/web/20261117022438/https://github.com/Sakamonya/token-os) |
+
+这两个都不在我们的服务器上，时间由它们记。Software Heritage 由法国国家信息与自动化研究所（Inria）维护，专门做「代码的永久存档」——**不看流量、不看热度，存进去就一直在**。
+
 如果你也想做，别管谁先想过，从 [`startup.s`](startup.s) 第 8 行开始就行。
 
 ---
