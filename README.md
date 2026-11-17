@@ -179,7 +179,8 @@ make && make run               # Ctrl-A X 退出
 ├── relay.js           帧 ↔ HTTPS 中转（不存状态）
 ├── run-token.sh       一键拉起内核 + 中转
 ├── docs/
-│   └── agent-in-kernel.md   调研：DSH 骨架拆解 + 三步路线
+│   ├── agent-in-kernel.md   调研：DSH 骨架拆解 + 三步路线
+│   └── conversation.md      这段对话的全文 —— 从"win 怎么启动"到"token 活在电路上"
 └── examples/
     ├── console-sample.log   十分钟里它说的话、调的工具、画的东西
     └── relay-sample.log     582 次请求的中转记录
@@ -221,6 +222,14 @@ make && make run               # Ctrl-A X 退出
 - **M6** 上真板子（先硬件虚拟化，再裸机）
 
 ---
+
+## 这段项目是怎么被聊出来的
+
+源码之外，人和 agent 的全部对话也一起开源了：[`docs/conversation.md`](docs/conversation.md)。
+
+不是整理过的教程，是**原文照录**：18 轮、277 次工具调用，从"win 的启动逻辑是什么"
+一路追问到"让 token 直接活在电路上"。中间包括想错了被推翻、包名猜错了被纠正、
+跑挂了现场查——**提示词也是源代码**。
 
 ## 许可
 
