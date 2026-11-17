@@ -1,0 +1,1499 @@
+[   0.0s] 已接上内核链路
+[   0.8s] #1 tool_calls 工具=uart_putc
+[   0.8s]    -> FINAL 179 字节，队列剩 1
+[   1.3s] #2 tool_calls 工具=uart_putc
+[   1.3s]    -> FINAL 148 字节，队列剩 1
+[   2.3s] #3 tool_calls 工具=uart_putc
+[   2.3s]    -> FINAL 148 字节，队列剩 1
+[   3.2s] #4 tool_calls 工具=uart_putc
+[   3.2s]    -> FINAL 148 字节，队列剩 1
+[   4.3s] #5 tool_calls 工具=uart_putc
+[   4.3s]    -> FINAL 148 字节，队列剩 1
+[   5.2s] #6 tool_calls 工具=uart_putc
+[   5.2s]    -> FINAL 148 字节，队列剩 1
+[   6.4s] #7 tool_calls 工具=uart_putc
+[   6.4s]    -> FINAL 148 字节，队列剩 1
+[   7.5s] #8 tool_calls 工具=uart_putc
+[   7.5s]    -> FINAL 148 字节，队列剩 1
+[   8.3s] #9 tool_calls 工具=uart_putc
+[   8.3s]    -> FINAL 148 字节，队列剩 1
+[   9.3s] #10 tool_calls 工具=uart_putc
+[   9.3s]    -> FINAL 150 字节，队列剩 1
+[  10.5s] #11 tool_calls 工具=define_tool
+[  10.5s]    -> FINAL 242 字节，队列剩 1
+[  11.4s] #12 tool_calls 工具=define_tool
+[  11.4s]    -> FINAL 306 字节，队列剩 1
+[  12.6s] #13 tool_calls 工具=define_tool
+[  12.6s]    -> FINAL 224 字节，队列剩 1
+[  13.8s] #14 tool_calls 工具=define_tool
+[  13.8s]    -> FINAL 221 字节，队列剩 1
+[  14.8s] #15 stop 文本=- 目标：用 uart_putc 打印名字，并用 define_tool 定义至
+[  14.8s]    -> FINAL 273 字节，队列剩 1
+[  15.0s]   [队列] 0 块 定时器=off
+[  15.0s] 状态：请求=16 工具轮=14 错误=0 token in/out=14473/870
+[  15.6s] #16 tool_calls 工具=list_tools
+[  15.6s]    -> FINAL 182 字节，队列剩 1
+[  16.9s] #17 tool_calls 工具=define_tool
+[  16.9s]    -> FINAL 253 字节，队列剩 1
+[  18.0s] #18 tool_calls 工具=define_tool
+[  18.0s]    -> FINAL 214 字节，队列剩 1
+[  19.3s] #19 tool_calls 工具=define_tool
+[  19.3s]    -> FINAL 187 字节，队列剩 1
+[  20.5s] #20 tool_calls 工具=define_tool
+[  20.5s]    -> FINAL 218 字节，队列剩 1
+[  21.3s] #21 tool_calls 工具=myname
+[  21.3s]    -> FINAL 193 字节，队列剩 1
+[  22.1s] #22 tool_calls 工具=nl
+[  22.1s]    -> FINAL 129 字节，队列剩 1
+[  22.8s] #23 tool_calls 工具=hello
+[  22.8s]    -> FINAL 132 字节，队列剩 1
+[  23.3s] #24 tool_calls 工具=pulse
+[  23.3s]    -> FINAL 132 字节，队列剩 1
+[  24.6s] #25 stop 文本=完成。
+
+- 用 `uart_putc` 打印了名字：**Claude**
+- 
+[  24.6s]    -> FINAL 397 字节，队列剩 1
+[  25.7s] #26 stop 文本=完成。
+
+- 用 `uart_putc` 打印了名字：**Claude**
+- 
+[  25.7s]    -> FINAL 393 字节，队列剩 1
+[  27.2s] #27 stop 文本=完成。
+
+- 用 `uart_putc` 打印了名字：**Claude**
+- 
+[  27.2s]    -> FINAL 387 字节，队列剩 1
+[  28.4s] #28 stop 文本=- 目标：用 uart_putc 打印名字，并用 define_tool 定义至
+[  28.4s]    -> FINAL 330 字节，队列剩 1
+[  29.4s] #29 tool_calls 工具=list_tools
+[  29.4s]    -> FINAL 176 字节，队列剩 1
+[  30.0s]   [队列] 0 块 定时器=off
+[  30.0s] 状态：请求=30 工具轮=24 错误=0 token in/out=27693/1761
+[  30.4s] #30 tool_calls 工具=define_tool
+[  30.4s]    -> FINAL 268 字节，队列剩 1
+[  31.0s] #31 tool_calls 工具=print_name
+[  31.0s]    -> FINAL 137 字节，队列剩 1
+[  31.9s] #32 tool_calls 工具=define_tool
+[  31.9s]    -> FINAL 266 字节，队列剩 1
+[  32.8s] #33 tool_calls 工具=define_tool
+[  32.8s]    -> FINAL 204 字节，队列剩 1
+[  33.6s] #34 tool_calls 工具=sep
+[  33.6s]    -> FINAL 130 字节，队列剩 1
+[  35.2s] #35 tool_calls 工具=tag
+[  35.2s]    -> FINAL 130 字节，队列剩 1
+[  36.6s] #36 stop 文本=完成情况：
+
+- **打印名字**：用 `uart_putc` 打印出 `Age
+[  36.6s]    -> FINAL 342 字节，队列剩 1
+[  37.7s] #37 stop 文本=- **打印名字**：用 `uart_putc` 打印出 `Agent`。
+- 
+[  37.7s]    -> FINAL 313 字节，队列剩 1
+[  39.0s] #38 stop 文本=- **打印名字**：用 `uart_putc` 打印出 `Agent`。
+- 
+[  39.0s]    -> FINAL 311 字节，队列剩 1
+[  39.9s] #39 stop 文本=- **打印名字**：用 `uart_putc` 打印出 `Agent`。
+- 
+[  39.9s]    -> FINAL 296 字节，队列剩 1
+[  41.9s] #40 stop 文本=- **打印名字**：用 `uart_putc` 打印出 `Agent`。
+- 
+[  41.9s]    -> FINAL 311 字节，队列剩 1
+[  43.3s] #41 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[  43.3s]    -> FINAL 361 字节，队列剩 1
+[  44.4s] #42 tool_calls 工具=list_tools
+[  44.4s]    -> FINAL 176 字节，队列剩 1
+[  45.0s]   [队列] 0 块 定时器=off
+[  45.0s] 状态：请求=43 工具轮=31 错误=0 token in/out=40093/2615
+[  45.3s] #43 tool_calls 工具=uart_putc
+[  45.3s]    -> FINAL 199 字节，队列剩 1
+[  46.3s] #44 tool_calls 工具=define_tool
+[  46.4s]    -> FINAL 241 字节，队列剩 1
+[  47.5s] #45 tool_calls 工具=define_tool
+[  47.5s]    -> FINAL 208 字节，队列剩 1
+[  48.5s] #46 tool_calls 工具=name_agent
+[  48.5s]    -> FINAL 137 字节，队列剩 1
+[  49.5s] #47 tool_calls 工具=nl
+[  49.5s]    -> FINAL 175 字节，队列剩 1
+[  50.8s] #48 tool_calls 工具=define_tool
+[  50.8s]    -> FINAL 346 字节，队列剩 1
+[  52.2s] #49 tool_calls 工具=list_tools
+[  52.2s]    -> FINAL 224 字节，队列剩 1
+[  53.4s] #50 tool_calls 工具=define_tool
+[  53.4s]    -> FINAL 332 字节，队列剩 1
+[  54.8s] #51 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[  54.8s]    -> FINAL 367 字节，队列剩 1
+[  55.7s] #52 tool_calls 工具=list_tools
+[  55.7s]    -> FINAL 182 字节，队列剩 1
+[  56.5s] #53 tool_calls 工具=define_tool
+[  56.5s]    -> FINAL 247 字节，队列剩 1
+[  57.8s] #54 tool_calls 工具=define_tool
+[  57.8s]    -> FINAL 264 字节，队列剩 1
+[  58.9s] #55 tool_calls 工具=define_tool
+[  58.9s]    -> FINAL 246 字节，队列剩 1
+[  60.0s] #56 tool_calls 工具=define_tool
+[  60.0s]    -> FINAL 197 字节，队列剩 1
+[  60.0s]   [队列] 1 块 定时器=on
+[  60.0s] 状态：请求=56 工具轮=44 错误=0 token in/out=52295/3641
+[  61.0s] #57 tool_calls 工具=define_tool
+[  61.0s]    -> FINAL 191 字节，队列剩 1
+[  62.0s] #58 tool_calls 工具=define_tool
+[  62.0s]    -> FINAL 326 字节，队列剩 1
+[  63.2s] #59 tool_calls 工具=uart_putc
+[  63.2s]    -> FINAL 175 字节，队列剩 1
+[  64.2s] #60 tool_calls 工具=uart_putc
+[  64.2s]    -> FINAL 148 字节，队列剩 1
+[  65.1s] #61 tool_calls 工具=uart_putc
+[  65.1s]    -> FINAL 148 字节，队列剩 1
+[  66.1s] #62 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[  66.1s]    -> FINAL 323 字节，队列剩 1
+[  66.9s] #63 tool_calls 工具=list_tools
+[  66.9s]    -> FINAL 176 字节，队列剩 1
+[  68.1s] #64 tool_calls 工具=define_tool
+[  68.1s]    -> FINAL 271 字节，队列剩 1
+[  69.2s] #65 tool_calls 工具=define_tool
+[  69.2s]    -> FINAL 283 字节，队列剩 1
+[  70.1s] #66 tool_calls 工具=list_tools
+[  70.1s]    -> FINAL 182 字节，队列剩 1
+[  71.2s] #67 tool_calls 工具=define_tool
+[  71.2s]    -> FINAL 221 字节，队列剩 1
+[  72.3s] #68 tool_calls 工具=define_tool
+[  72.3s]    -> FINAL 259 字节，队列剩 1
+[  73.0s] #69 tool_calls 工具=define_tool
+[  73.0s]    -> FINAL 218 字节，队列剩 1
+[  74.1s] #70 tool_calls 工具=define_tool
+[  74.1s]    -> FINAL 268 字节，队列剩 1
+[  75.0s]   [队列] 0 块 定时器=off
+[  75.0s] 状态：请求=71 工具轮=57 错误=0 token in/out=66321/4528
+[  75.3s] #71 tool_calls 工具=define_tool
+[  75.3s]    -> FINAL 216 字节，队列剩 1
+[  76.4s] #72 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[  76.4s]    -> FINAL 334 字节，队列剩 1
+[  77.1s] #73 tool_calls 工具=uart_putc
+[  77.1s]    -> FINAL 148 字节，队列剩 1
+[  78.1s] #74 tool_calls 工具=define_tool
+[  78.1s]    -> FINAL 194 字节，队列剩 1
+[  78.9s] #75 tool_calls 工具=list_tools
+[  78.9s]    -> FINAL 137 字节，队列剩 1
+[  80.0s] #76 tool_calls 工具=define_tool
+[  80.0s]    -> FINAL 199 字节，队列剩 1
+[  81.4s] #77 tool_calls 工具=define_tool
+[  81.4s]    -> FINAL 184 字节，队列剩 1
+[  83.0s] #78 tool_calls 工具=define_tool
+[  83.0s]    -> FINAL 192 字节，队列剩 1
+[  84.0s] #79 tool_calls 工具=name_agent
+[  84.0s]    -> FINAL 137 字节，队列剩 1
+[  84.8s] #80 tool_calls 工具=sep
+[  84.8s]    -> FINAL 130 字节，队列剩 1
+[  85.5s] #81 tool_calls 工具=tag
+[  85.5s]    -> FINAL 130 字节，队列剩 1
+[  86.5s] #82 stop 文本=完成：
+
+- 打印名字：`Agent`（用 uart_putc 逐字符）
+- 定
+[  86.5s]    -> FINAL 267 字节，队列剩 1
+[  87.4s] #83 stop 文本=已完成目标：
+
+- **打印名字**：用 `uart_putc` 逐字符输出 `
+[  87.4s]    -> FINAL 374 字节，队列剩 1
+[  88.7s] #84 stop 文本=已完成目标：
+
+- **打印名字**：用 `uart_putc` 逐字符输出 `
+[  88.7s]    -> FINAL 427 字节，队列剩 1
+[  89.6s] #85 stop 文本=已完成：
+
+- **打印名字**：用 `uart_putc` 逐字符输出 `Ag
+[  89.6s]    -> FINAL 362 字节，队列剩 1
+[  90.0s]   [队列] 0 块 定时器=off
+[  90.0s] 状态：请求=86 工具轮=67 错误=0 token in/out=81200/5436
+[  91.0s] #86 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[  91.0s]    -> FINAL 327 字节，队列剩 1
+[  92.0s] #87 tool_calls 工具=list_tools
+[  92.0s]    -> FINAL 182 字节，队列剩 1
+[  93.0s] #88 tool_calls 工具=uart_putc
+[  93.0s]    -> FINAL 208 字节，队列剩 1
+[  93.6s] #89 tool_calls 工具=uart_putc
+[  93.6s]    -> FINAL 148 字节，队列剩 1
+[  94.4s] #90 tool_calls 工具=uart_putc
+[  94.4s]    -> FINAL 148 字节，队列剩 1
+[  95.2s] #91 tool_calls 工具=uart_putc
+[  95.2s]    -> FINAL 148 字节，队列剩 1
+[  96.1s] #92 tool_calls 工具=uart_putc
+[  96.1s]    -> FINAL 148 字节，队列剩 1
+[  96.8s] #93 tool_calls 工具=uart_putc
+[  96.8s]    -> FINAL 148 字节，队列剩 1
+[  97.4s] #94 tool_calls 工具=uart_putc
+[  97.4s]    -> FINAL 148 字节，队列剩 1
+[  98.3s] #95 tool_calls 工具=uart_putc
+[  98.4s]    -> FINAL 148 字节，队列剩 1
+[  99.4s] #96 tool_calls 工具=uart_putc
+[  99.4s]    -> FINAL 148 字节，队列剩 1
+[ 100.0s] #97 tool_calls 工具=uart_putc
+[ 100.0s]    -> FINAL 150 字节，队列剩 1
+[ 101.2s] #98 tool_calls 工具=define_tool
+[ 101.2s]    -> FINAL 231 字节，队列剩 1
+[ 102.5s] #99 tool_calls 工具=define_tool
+[ 102.5s]    -> FINAL 287 字节，队列剩 1
+[ 104.0s] #100 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[ 104.0s]    -> FINAL 372 字节，队列剩 1
+[ 105.0s]   [队列] 0 块 定时器=off
+[ 105.0s] 状态：请求=101 工具轮=80 错误=0 token in/out=94768/6202
+[ 105.1s] #101 tool_calls 工具=list_tools
+[ 105.1s]    -> FINAL 182 字节，队列剩 1
+[ 106.0s] #102 tool_calls 工具=uart_putc
+[ 106.0s]    -> FINAL 202 字节，队列剩 1
+[ 107.1s] #103 tool_calls 工具=define_tool
+[ 107.1s]    -> FINAL 197 字节，队列剩 1
+[ 108.0s] #104 tool_calls 工具=define_tool
+[ 108.0s]    -> FINAL 257 字节，队列剩 1
+[ 108.9s] #105 tool_calls 工具=define_tool
+[ 108.9s]    -> FINAL 195 字节，队列剩 1
+[ 109.8s] #106 tool_calls 工具=define_tool
+[ 109.8s]    -> FINAL 179 字节，队列剩 1
+[ 110.8s] #107 tool_calls 工具=define_tool
+[ 110.8s]    -> FINAL 184 字节，队列剩 1
+[ 111.4s] #108 tool_calls 工具=myname
+[ 111.4s]    -> FINAL 172 字节，队列剩 1
+[ 112.1s] #109 tool_calls 工具=nl
+[ 112.1s]    -> FINAL 129 字节，队列剩 1
+[ 113.0s] #110 tool_calls 工具=sep
+[ 113.0s]    -> FINAL 130 字节，队列剩 1
+[ 113.7s] #111 tool_calls 工具=hello
+[ 113.7s]    -> FINAL 132 字节，队列剩 1
+[ 115.1s] #112 stop 文本=完成。
+
+- 用 `uart_putc` 打印了名字首字母 `A`。
+- 工具数
+[ 115.1s]    -> FINAL 339 字节，队列剩 1
+[ 116.3s] #113 stop 文本=已完成：
+
+- 用 `uart_putc` 打印了名字首字母 `A`。
+- 工具
+[ 116.3s]    -> FINAL 372 字节，队列剩 1
+[ 117.3s] #114 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[ 117.3s]    -> FINAL 407 字节，队列剩 1
+[ 118.6s] #115 tool_calls 工具=list_tools
+[ 118.6s]    -> FINAL 176 字节，队列剩 1
+[ 119.6s] #116 tool_calls 工具=uart_putc
+[ 119.6s]    -> FINAL 208 字节，队列剩 1
+[ 120.0s]   [队列] 0 块 定时器=off
+[ 120.0s] 状态：请求=117 工具轮=93 错误=0 token in/out=109996/7055
+[ 120.2s] #117 tool_calls 工具=uart_putc
+[ 120.2s]    -> FINAL 148 字节，队列剩 1
+[ 121.1s] #118 tool_calls 工具=uart_putc
+[ 121.1s]    -> FINAL 148 字节，队列剩 1
+[ 122.2s] #119 tool_calls 工具=uart_putc
+[ 122.2s]    -> FINAL 148 字节，队列剩 1
+[ 122.9s] #120 tool_calls 工具=uart_putc
+[ 122.9s]    -> FINAL 148 字节，队列剩 1
+[ 123.7s] #121 tool_calls 工具=uart_putc
+[ 123.7s]    -> FINAL 150 字节，队列剩 1
+[ 124.8s] #122 tool_calls 工具=define_tool
+[ 124.8s]    -> FINAL 271 字节，队列剩 1
+[ 125.7s] #123 tool_calls 工具=list_tools
+[ 125.7s]    -> FINAL 215 字节，队列剩 1
+[ 126.7s] #124 tool_calls 工具=define_tool
+[ 126.7s]    -> FINAL 293 字节，队列剩 1
+[ 127.4s] #125 tool_calls 工具=define_tool
+[ 127.4s]    -> FINAL 206 字节，队列剩 1
+[ 128.5s] #126 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[ 128.5s]    -> FINAL 332 字节，队列剩 1
+[ 129.8s] #127 tool_calls 工具=list_tools
+[ 129.8s]    -> FINAL 202 字节，队列剩 1
+[ 131.0s] #128 tool_calls 工具=uart_putc
+[ 131.0s]    -> FINAL 196 字节，队列剩 1
+[ 132.1s] #129 tool_calls 工具=uart_putc
+[ 132.1s]    -> FINAL 148 字节，队列剩 1
+[ 133.0s] #130 tool_calls 工具=uart_putc
+[ 133.0s]    -> FINAL 148 字节，队列剩 1
+[ 133.8s] #131 tool_calls 工具=uart_putc
+[ 133.8s]    -> FINAL 148 字节，队列剩 1
+[ 135.0s]   [队列] 0 块 定时器=off
+[ 135.0s] 状态：请求=132 工具轮=107 错误=0 token in/out=123187/7818
+[ 136.1s] #132 tool_calls 工具=uart_putc
+[ 136.1s]    -> FINAL 148 字节，队列剩 1
+[ 136.9s] #133 tool_calls 工具=uart_putc
+[ 136.9s]    -> FINAL 148 字节，队列剩 1
+[ 137.8s] #134 tool_calls 工具=uart_putc
+[ 137.8s]    -> FINAL 148 字节，队列剩 1
+[ 138.8s] #135 tool_calls 工具=uart_putc
+[ 138.8s]    -> FINAL 148 字节，队列剩 1
+[ 139.6s] #136 tool_calls 工具=uart_putc
+[ 139.6s]    -> FINAL 150 字节，队列剩 1
+[ 140.8s] #137 tool_calls 工具=define_tool
+[ 140.8s]    -> FINAL 234 字节，队列剩 1
+[ 141.6s] #138 tool_calls 工具=define_tool
+[ 141.6s]    -> FINAL 260 字节，队列剩 1
+[ 142.4s] #139 tool_calls 工具=define_tool
+[ 142.4s]    -> FINAL 213 字节，队列剩 1
+[ 143.4s] #140 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[ 143.4s]    -> FINAL 356 字节，队列剩 1
+[ 144.4s] #141 tool_calls 工具=list_tools
+[ 144.4s]    -> FINAL 185 字节，队列剩 1
+[ 145.4s] #142 tool_calls 工具=uart_putc
+[ 145.4s]    -> FINAL 212 字节，队列剩 1
+[ 146.5s] #143 tool_calls 工具=define_tool
+[ 146.5s]    -> FINAL 261 字节，队列剩 1
+[ 147.3s] #144 tool_calls 工具=define_tool
+[ 147.3s]    -> FINAL 266 字节，队列剩 1
+[ 148.2s] #145 tool_calls 工具=define_tool
+[ 148.2s]    -> FINAL 207 字节，队列剩 1
+[ 149.5s] #146 tool_calls 工具=define_tool
+[ 149.5s]    -> FINAL 247 字节，队列剩 1
+[ 150.0s]   [队列] 0 块 定时器=off
+[ 150.0s] 状态：请求=147 工具轮=121 错误=0 token in/out=137588/8785
+[ 150.3s] #147 tool_calls 工具=define_tool
+[ 150.3s]    -> FINAL 212 字节，队列剩 1
+[ 151.6s] #148 tool_calls 工具=myname
+[ 151.6s]    -> FINAL 183 字节，队列剩 1
+[ 152.9s] #149 tool_calls 工具=banner
+[ 152.9s]    -> FINAL 133 字节，队列剩 1
+[ 153.5s] #150 tool_calls 工具=tag
+[ 153.5s]    -> FINAL 130 字节，队列剩 1
+[ 154.6s] #151 tool_calls 工具=list_tools
+[ 154.6s]    -> FINAL 179 字节，队列剩 1
+[ 155.7s] #152 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[ 155.7s]    -> FINAL 369 字节，队列剩 1
+[ 156.7s] #153 tool_calls 工具=list_tools
+[ 156.7s]    -> FINAL 176 字节，队列剩 1
+[ 157.5s] #154 tool_calls 工具=uart_putc
+[ 157.5s]    -> FINAL 190 字节，队列剩 1
+[ 158.5s] #155 tool_calls 工具=uart_putc
+[ 158.5s]    -> FINAL 148 字节，队列剩 1
+[ 159.2s] #156 tool_calls 工具=uart_putc
+[ 159.2s]    -> FINAL 148 字节，队列剩 1
+[ 159.9s] #157 tool_calls 工具=uart_putc
+[ 159.9s]    -> FINAL 148 字节，队列剩 1
+[ 161.1s] #158 tool_calls 工具=uart_putc
+[ 161.1s]    -> FINAL 148 字节，队列剩 1
+[ 162.1s] #159 tool_calls 工具=uart_putc
+[ 162.1s]    -> FINAL 148 字节，队列剩 1
+[ 163.4s] #160 tool_calls 工具=uart_putc
+[ 163.4s]    -> FINAL 148 字节，队列剩 1
+[ 164.4s] #161 tool_calls 工具=uart_putc
+[ 164.4s]    -> FINAL 148 字节，队列剩 1
+[ 165.0s]   [队列] 0 块 定时器=off
+[ 165.0s] 状态：请求=162 工具轮=135 错误=0 token in/out=152361/9415
+[ 165.5s] #162 tool_calls 工具=uart_putc
+[ 165.5s]    -> FINAL 148 字节，队列剩 1
+[ 166.7s] #163 tool_calls 工具=uart_putc
+[ 166.7s]    -> FINAL 150 字节，队列剩 1
+[ 167.8s] #164 tool_calls 工具=define_tool
+[ 167.8s]    -> FINAL 289 字节，队列剩 1
+[ 169.1s] #165 tool_calls 工具=define_tool
+[ 169.1s]    -> FINAL 276 字节，队列剩 1
+[ 170.4s] #166 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[ 170.4s]    -> FINAL 362 字节，队列剩 1
+[ 171.2s] #167 tool_calls 工具=list_tools
+[ 171.2s]    -> FINAL 176 字节，队列剩 1
+[ 172.0s] #168 tool_calls 工具=uart_putc
+[ 172.0s]    -> FINAL 202 字节，队列剩 1
+[ 173.0s] #169 tool_calls 工具=define_tool
+[ 173.0s]    -> FINAL 262 字节，队列剩 1
+[ 174.2s] #170 tool_calls 工具=define_tool
+[ 174.2s]    -> FINAL 289 字节，队列剩 1
+[ 175.2s] #171 tool_calls 工具=list_tools
+[ 175.2s]    -> FINAL 137 字节，队列剩 1
+[ 176.2s] #172 tool_calls 工具=define_tool
+[ 176.2s]    -> FINAL 221 字节，队列剩 1
+[ 177.2s] #173 tool_calls 工具=define_tool
+[ 177.2s]    -> FINAL 189 字节，队列剩 1
+[ 178.1s] #174 tool_calls 工具=define_tool
+[ 178.1s]    -> FINAL 197 字节，队列剩 1
+[ 179.2s] #175 tool_calls 工具=define_tool
+[ 179.2s]    -> FINAL 261 字节，队列剩 1
+[ 180.0s]   [队列] 0 块 定时器=off
+[ 180.0s] 状态：请求=176 工具轮=148 错误=0 token in/out=166204/10349
+[ 180.0s] #176 tool_calls 工具=define_tool
+[ 180.0s]    -> FINAL 219 字节，队列剩 1
+[ 181.3s] #177 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[ 181.3s]    -> FINAL 369 字节，队列剩 1
+[ 182.0s] #178 tool_calls 工具=list_tools
+[ 182.0s]    -> FINAL 176 字节，队列剩 1
+[ 183.0s] #179 tool_calls 工具=uart_putc
+[ 183.0s]    -> FINAL 208 字节，队列剩 1
+[ 183.8s] #180 tool_calls 工具=uart_putc
+[ 183.8s]    -> FINAL 148 字节，队列剩 1
+[ 184.4s] #181 tool_calls 工具=uart_putc
+[ 184.4s]    -> FINAL 148 字节，队列剩 1
+[ 185.0s] #182 tool_calls 工具=uart_putc
+[ 185.0s]    -> FINAL 148 字节，队列剩 1
+[ 185.8s] #183 tool_calls 工具=uart_putc
+[ 185.8s]    -> FINAL 148 字节，队列剩 1
+[ 186.6s] #184 tool_calls 工具=uart_putc
+[ 186.6s]    -> FINAL 150 字节，队列剩 1
+[ 187.4s] #185 tool_calls 工具=define_tool
+[ 187.4s]    -> FINAL 231 字节，队列剩 1
+[ 188.2s] #186 tool_calls 工具=define_tool
+[ 188.2s]    -> FINAL 260 字节，队列剩 1
+[ 189.2s] #187 tool_calls 工具=define_tool
+[ 189.2s]    -> FINAL 201 字节，队列剩 1
+[ 190.0s] #188 tool_calls 工具=define_tool
+[ 190.0s]    -> FINAL 190 字节，队列剩 1
+[ 191.0s] #189 tool_calls 工具=define_tool
+[ 191.0s]    -> FINAL 206 字节，队列剩 1
+[ 192.2s] #190 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[ 192.2s]    -> FINAL 349 字节，队列剩 1
+[ 193.1s] #191 tool_calls 工具=list_tools
+[ 193.1s]    -> FINAL 176 字节，队列剩 1
+[ 194.2s] #192 tool_calls 工具=define_tool
+[ 194.2s]    -> FINAL 269 字节，队列剩 1
+[ 195.0s]   [队列] 0 块 定时器=off
+[ 195.0s] 状态：请求=193 工具轮=163 错误=0 token in/out=181613/11368
+[ 195.1s] #193 tool_calls 工具=define_tool
+[ 195.1s]    -> FINAL 338 字节，队列剩 1
+[ 195.9s] #194 tool_calls 工具=hello
+[ 195.9s]    -> FINAL 180 字节，队列剩 1
+[ 196.9s] #195 tool_calls 工具=define_tool
+[ 196.9s]    -> FINAL 255 字节，队列剩 1
+[ 197.6s] #196 tool_calls 工具=define_tool
+[ 197.6s]    -> FINAL 191 字节，队列剩 1
+[ 198.6s] #197 tool_calls 工具=sep
+[ 198.6s]    -> FINAL 163 字节，队列剩 1
+[ 199.5s] #198 tool_calls 工具=nl
+[ 199.5s]    -> FINAL 129 字节，队列剩 1
+[ 200.4s] #199 tool_calls 工具=hello
+[ 200.4s]    -> FINAL 132 字节，队列剩 1
+[ 201.4s] #200 stop 文本=完成。总结：
+
+- 用 `uart_putc` 打印了名字：**Agent**
+
+[ 201.4s]    -> FINAL 346 字节，队列剩 1
+[ 202.4s] #201 stop 文本=完成。总结：
+
+- 用 `uart_putc` 打印了名字：**Agent**
+
+[ 202.4s]    -> FINAL 319 字节，队列剩 1
+[ 203.6s] #202 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具。
+- 已定
+[ 203.6s]    -> FINAL 328 字节，队列剩 1
+[ 204.4s] #203 tool_calls 工具=list_tools
+[ 204.4s]    -> FINAL 179 字节，队列剩 1
+[ 205.1s] #204 tool_calls 工具=uart_putc
+[ 205.1s]    -> FINAL 187 字节，队列剩 1
+[ 206.1s] #205 tool_calls 工具=uart_putc
+[ 206.1s]    -> FINAL 148 字节，队列剩 1
+[ 207.2s] #206 tool_calls 工具=uart_putc
+[ 207.2s]    -> FINAL 148 字节，队列剩 1
+[ 207.7s] #207 tool_calls 工具=uart_putc
+[ 207.7s]    -> FINAL 150 字节，队列剩 1
+[ 208.7s] #208 tool_calls 工具=define_tool
+[ 208.7s]    -> FINAL 267 字节，队列剩 1
+[ 209.5s] #209 tool_calls 工具=define_tool
+[ 209.5s]    -> FINAL 256 字节，队列剩 1
+[ 210.0s]   [队列] 0 块 定时器=off
+[ 210.0s] 状态：请求=210 工具轮=177 错误=0 token in/out=197249/12285
+[ 210.2s] #210 tool_calls 工具=hello
+[ 210.2s]    -> FINAL 132 字节，队列剩 1
+[ 211.1s] #211 tool_calls 工具=define_tool
+[ 211.1s]    -> FINAL 218 字节，队列剩 1
+[ 211.9s] #212 tool_calls 工具=nl
+[ 211.9s]    -> FINAL 129 字节，队列剩 1
+[ 213.1s] #213 tool_calls 工具=define_tool
+[ 213.1s]    -> FINAL 230 字节，队列剩 1
+[ 213.7s] #214 tool_calls 工具=sep
+[ 213.7s]    -> FINAL 130 字节，队列剩 1
+[ 214.8s] #215 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具（因工具数已
+[ 214.8s]    -> FINAL 366 字节，队列剩 1
+[ 215.6s] #216 tool_calls 工具=list_tools
+[ 215.6s]    -> FINAL 164 字节，队列剩 1
+[ 216.6s] #217 tool_calls 工具=define_tool
+[ 216.6s]    -> FINAL 253 字节，队列剩 1
+[ 217.4s] #218 tool_calls 工具=hello
+[ 217.4s]    -> FINAL 132 字节，队列剩 1
+[ 218.0s] #219 tool_calls 工具=define_tool
+[ 218.0s]    -> FINAL 199 字节，队列剩 1
+[ 218.7s] #220 tool_calls 工具=nl
+[ 218.7s]    -> FINAL 129 字节，队列剩 1
+[ 219.9s] #221 tool_calls 工具=define_tool
+[ 219.9s]    -> FINAL 238 字节，队列剩 1
+[ 220.5s] #222 tool_calls 工具=sep
+[ 220.5s]    -> FINAL 130 字节，队列剩 1
+[ 221.6s] #223 tool_calls 工具=define_tool
+[ 221.6s]    -> FINAL 370 字节，队列剩 1
+[ 222.9s] #224 tool_calls 工具=define_tool
+[ 222.9s]    -> FINAL 393 字节，队列剩 1
+[ 223.9s] #225 tool_calls 工具=pulse
+[ 223.9s]    -> FINAL 132 字节，队列剩 1
+[ 225.0s]   [队列] 0 块 定时器=off
+[ 225.0s] 状态：请求=226 工具轮=192 错误=0 token in/out=213330/13279
+[ 225.0s] #226 stop 文本=- 目标：用 uart_putc 打印名字，并定义至少 3 个新工具（工具数已满
+[ 225.0s]    -> FINAL 393 字节，队列剩 1
+[ 226.1s] #227 tool_calls 工具=list_tools
+[ 226.1s]    -> FINAL 176 字节，队列剩 1
+[ 227.3s] #228 tool_calls 工具=define_tool,define_tool,define_tool
+[ 227.3s]    -> FINAL 515 字节，队列剩 1
+[ 228.2s] #229 tool_calls 工具=define_tool
+[ 228.2s]    -> FINAL 177 字节，队列剩 1
+[ 229.0s] #230 tool_calls 工具=define_tool
+[ 229.0s]    -> FINAL 196 字节，队列剩 1
+[ 229.7s] #231 tool_calls 工具=hello
+[ 229.7s]    -> FINAL 165 字节，队列剩 1
+[ 230.7s] #232 tool_calls 工具=sep
+[ 230.7s]    -> FINAL 130 字节，队列剩 1
+[ 231.3s] #233 tool_calls 工具=nl
+[ 231.3s]    -> FINAL 129 字节，队列剩 1
+[ 232.4s] #234 tool_calls 工具=uart_putc
+[ 232.4s]    -> FINAL 213 字节，队列剩 1
+[ 233.2s] #235 tool_calls 工具=uart_putc
+[ 233.2s]    -> FINAL 148 字节，队列剩 1
+[ 233.8s] #236 tool_calls 工具=uart_putc
+[ 233.8s]    -> FINAL 148 字节，队列剩 1
+[ 234.6s] #237 tool_calls 工具=uart_putc
+[ 234.6s]    -> FINAL 148 字节，队列剩 1
+[ 235.3s] #238 tool_calls 工具=uart_putc
+[ 235.3s]    -> FINAL 148 字节，队列剩 1
+[ 236.4s] #239 tool_calls 工具=uart_putc
+[ 236.4s]    -> FINAL 150 字节，队列剩 1
+[ 237.5s] #240 stop 文本=完成。
+
+- 用 `uart_putc` 逐字符打印了名字：**Agent**
+
+[ 237.5s]    -> FINAL 275 字节，队列剩 1
+[ 238.6s] #241 stop 文本=- 目标：用 uart_putc 打印名字，并覆盖 hello、nl、sep 定
+[ 238.6s]    -> FINAL 317 字节，队列剩 1
+[ 239.5s] #242 tool_calls 工具=list_tools
+[ 239.5s]    -> FINAL 137 字节，队列剩 1
+[ 240.0s]   [队列] 0 块 定时器=off
+[ 240.0s] 状态：请求=243 工具轮=206 错误=0 token in/out=229549/14199
+[ 240.4s] #243 tool_calls 工具=define_tool
+[ 240.4s]    -> FINAL 194 字节，队列剩 1
+[ 241.5s] #244 tool_calls 工具=define_tool
+[ 241.5s]    -> FINAL 177 字节，队列剩 1
+[ 242.2s] #245 tool_calls 工具=define_tool
+[ 242.2s]    -> FINAL 184 字节，队列剩 1
+[ 243.4s] #246 tool_calls 工具=define_tool
+[ 243.4s]    -> FINAL 195 字节，队列剩 1
+[ 244.6s] #247 tool_calls 工具=uart_putc
+[ 244.6s]    -> FINAL 148 字节，队列剩 1
+[ 245.4s] #248 tool_calls 工具=uart_putc
+[ 245.4s]    -> FINAL 148 字节，队列剩 1
+[ 246.3s] #249 tool_calls 工具=uart_putc
+[ 246.3s]    -> FINAL 148 字节，队列剩 1
+[ 247.0s] #250 tool_calls 工具=uart_putc
+[ 247.0s]    -> FINAL 148 字节，队列剩 1
+[ 247.9s] #251 tool_calls 工具=uart_putc
+[ 247.9s]    -> FINAL 148 字节，队列剩 1
+[ 248.6s] #252 tool_calls 工具=uart_putc
+[ 248.6s]    -> FINAL 150 字节，队列剩 1
+[ 249.7s] #253 stop 文本=已完成：
+
+- 用 `uart_putc` 逐字符打印了名字 `Agent` 并
+[ 249.7s]    -> FINAL 308 字节，队列剩 1
+[ 250.9s] #254 stop 文本=- `sep` → 打印 `---`
+
+（`myname` 也顺手重定义为打印 
+[ 250.9s]    -> FINAL 134 字节，队列剩 1
+[ 252.1s] #255 stop 文本=已完成：
+
+- 用 `uart_putc` 逐字符打印名字 `Agent` + 
+[ 252.1s]    -> FINAL 304 字节，队列剩 1
+[ 253.8s] #256 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 253.8s]    -> FINAL 448 字节，队列剩 1
+[ 254.6s] #257 tool_calls 工具=list_tools
+[ 254.6s]    -> FINAL 176 字节，队列剩 1
+[ 255.0s]   [队列] 0 块 定时器=off
+[ 255.0s] 状态：请求=258 工具轮=217 错误=0 token in/out=244739/15027
+[ 256.1s] #258 tool_calls 工具=define_tool,define_tool,define_tool
+[ 256.1s]    -> FINAL 493 字节，队列剩 1
+[ 256.9s] #259 tool_calls 工具=define_tool
+[ 256.9s]    -> FINAL 177 字节，队列剩 1
+[ 257.6s] #260 tool_calls 工具=define_tool
+[ 257.6s]    -> FINAL 184 字节，队列剩 1
+[ 259.0s] #261 tool_calls 工具=uart_putc
+[ 259.0s]    -> FINAL 175 字节，队列剩 1
+[ 259.7s] #262 tool_calls 工具=uart_putc
+[ 259.7s]    -> FINAL 148 字节，队列剩 1
+[ 260.5s] #263 tool_calls 工具=uart_putc
+[ 260.5s]    -> FINAL 148 字节，队列剩 1
+[ 261.7s] #264 tool_calls 工具=uart_putc
+[ 261.7s]    -> FINAL 148 字节，队列剩 1
+[ 262.8s] #265 tool_calls 工具=uart_putc
+[ 262.8s]    -> FINAL 148 字节，队列剩 1
+[ 264.0s] #266 tool_calls 工具=list_tools
+[ 264.0s]    -> FINAL 137 字节，队列剩 1
+[ 264.8s] #267 stop 文本=完成：
+
+- 已用 `uart_putc` 逐字符打印出 **Agent**。
+
+[ 264.8s]    -> FINAL 316 字节，队列剩 1
+[ 265.8s] #268 stop 文本=完成：
+
+- 已用 `uart_putc` 逐字符打印出 **Agent**。
+
+[ 265.8s]    -> FINAL 239 字节，队列剩 1
+[ 267.3s] #269 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 267.3s]    -> FINAL 423 字节，队列剩 1
+[ 268.0s] #270 tool_calls 工具=list_tools
+[ 268.0s]    -> FINAL 182 字节，队列剩 1
+[ 269.5s] #271 tool_calls 工具=define_tool,define_tool,define_tool
+[ 269.5s]    -> FINAL 490 字节，队列剩 1
+[ 270.0s]   [队列] 0 块 定时器=off
+[ 270.0s] 状态：请求=272 工具轮=228 错误=0 token in/out=257800/16003
+[ 270.6s] #272 tool_calls 工具=define_tool
+[ 270.6s]    -> FINAL 177 字节，队列剩 1
+[ 271.6s] #273 tool_calls 工具=define_tool
+[ 271.6s]    -> FINAL 184 字节，队列剩 1
+[ 272.8s] #274 tool_calls 工具=uart_putc
+[ 272.8s]    -> FINAL 195 字节，队列剩 1
+[ 273.8s] #275 tool_calls 工具=uart_putc
+[ 273.8s]    -> FINAL 148 字节，队列剩 1
+[ 275.0s] #276 tool_calls 工具=uart_putc
+[ 275.0s]    -> FINAL 148 字节，队列剩 1
+[ 275.8s] #277 tool_calls 工具=uart_putc
+[ 275.8s]    -> FINAL 148 字节，队列剩 1
+[ 277.0s] #278 tool_calls 工具=uart_putc
+[ 277.0s]    -> FINAL 148 字节，队列剩 1
+[ 278.0s] #279 tool_calls 工具=uart_putc
+[ 278.0s]    -> FINAL 150 字节，队列剩 1
+[ 279.1s] #280 stop 文本=完成：
+
+- 用 `uart_putc` 逐字符打印了 `Agent` 并换行。
+[ 279.1s]    -> FINAL 244 字节，队列剩 1
+[ 279.9s] #281 stop 文本=完成。已用 `uart_putc` 逐字符打印出 `Agent` 并换行，并覆盖
+[ 279.9s]    -> FINAL 222 字节，队列剩 1
+[ 281.0s] #282 stop 文本=完成：
+
+- 用 `uart_putc` 逐字符打印了 **Agent** 并换
+[ 281.0s]    -> FINAL 246 字节，队列剩 1
+[ 282.0s] #283 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 282.0s]    -> FINAL 344 字节，队列剩 1
+[ 283.3s] #284 tool_calls 工具=list_tools
+[ 283.3s]    -> FINAL 182 字节，队列剩 1
+[ 284.7s] #285 tool_calls 工具=define_tool,define_tool,define_tool
+[ 284.7s]    -> FINAL 490 字节，队列剩 1
+[ 285.0s]   [队列] 0 块 定时器=off
+[ 285.0s] 状态：请求=286 工具轮=238 错误=0 token in/out=271629/16836
+[ 285.4s] #286 tool_calls 工具=define_tool
+[ 285.4s]    -> FINAL 177 字节，队列剩 1
+[ 286.6s] #287 tool_calls 工具=define_tool
+[ 286.6s]    -> FINAL 184 字节，队列剩 1
+[ 288.4s] #288 tool_calls 工具=uart_putc
+[ 288.4s]    -> FINAL 175 字节，队列剩 1
+[ 289.6s] #289 tool_calls 工具=uart_putc
+[ 289.6s]    -> FINAL 148 字节，队列剩 1
+[ 290.8s] #290 tool_calls 工具=uart_putc
+[ 290.8s]    -> FINAL 148 字节，队列剩 1
+[ 291.7s] #291 tool_calls 工具=uart_putc
+[ 291.7s]    -> FINAL 148 字节，队列剩 1
+[ 292.6s] #292 tool_calls 工具=uart_putc
+[ 292.6s]    -> FINAL 148 字节，队列剩 1
+[ 293.7s] #293 tool_calls 工具=uart_putc
+[ 293.7s]    -> FINAL 150 字节，队列剩 1
+[ 294.7s] #294 stop 文本=完成：
+
+- 已用 uart_putc 逐字符打印出 **Agent**
+- 已
+[ 294.7s]    -> FINAL 234 字节，队列剩 1
+[ 295.5s] #295 stop 文本=- `sep` → 打印 `---`
+
+三个工具均已返回 `redefined`
+[ 295.5s]    -> FINAL 135 字节，队列剩 1
+[ 296.5s] #296 stop 文本=已完成目标：打印名字 **Agent**，并覆盖定义了 `hello`、`nl`
+[ 296.5s]    -> FINAL 153 字节，队列剩 1
+[ 297.4s] #297 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 297.4s]    -> FINAL 355 字节，队列剩 1
+[ 298.0s] #298 tool_calls 工具=list_tools
+[ 298.0s]    -> FINAL 170 字节，队列剩 1
+[ 298.8s] #299 tool_calls 工具=uart_putc
+[ 298.8s]    -> FINAL 166 字节，队列剩 1
+[ 299.5s] #300 tool_calls 工具=uart_putc
+[ 299.5s]    -> FINAL 148 字节，队列剩 1
+[ 300.0s]   [队列] 0 块 定时器=off
+[ 300.0s] 状态：请求=301 工具轮=249 错误=0 token in/out=286050/17491
+[ 300.2s] #301 tool_calls 工具=uart_putc
+[ 300.2s]    -> FINAL 148 字节，队列剩 1
+[ 301.1s] #302 tool_calls 工具=uart_putc
+[ 301.1s]    -> FINAL 148 字节，队列剩 1
+[ 302.2s] #303 tool_calls 工具=uart_putc
+[ 302.2s]    -> FINAL 148 字节，队列剩 1
+[ 303.2s] #304 tool_calls 工具=define_tool
+[ 303.2s]    -> FINAL 250 字节，队列剩 1
+[ 304.6s] #305 tool_calls 工具=define_tool
+[ 304.6s]    -> FINAL 177 字节，队列剩 1
+[ 305.8s] #306 tool_calls 工具=define_tool
+[ 305.8s]    -> FINAL 184 字节，队列剩 1
+[ 307.3s] #307 tool_calls 工具=list_tools
+[ 307.3s]    -> FINAL 170 字节，队列剩 1
+[ 308.1s] #308 stop 文本=完成：
+- 用 uart_putc 逐字符打印了 `Agent`
+- 覆盖定义了
+[ 308.1s]    -> FINAL 216 字节，队列剩 1
+[ 309.5s] #309 stop 文本=已完成：
+
+- 用 `uart_putc` 逐字符打印了 **Agent**
+-
+[ 309.5s]    -> FINAL 322 字节，队列剩 1
+[ 310.5s] #310 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 310.5s]    -> FINAL 426 字节，队列剩 1
+[ 311.5s] #311 tool_calls 工具=list_tools
+[ 311.5s]    -> FINAL 137 字节，队列剩 1
+[ 312.4s] #312 tool_calls 工具=define_tool
+[ 312.4s]    -> FINAL 194 字节，队列剩 1
+[ 313.4s] #313 tool_calls 工具=define_tool
+[ 313.4s]    -> FINAL 177 字节，队列剩 1
+[ 314.4s] #314 tool_calls 工具=define_tool
+[ 314.4s]    -> FINAL 184 字节，队列剩 1
+[ 315.0s]   [队列] 0 块 定时器=off
+[ 315.0s] 状态：请求=315 工具轮=260 错误=0 token in/out=298875/18272
+[ 315.4s] #315 tool_calls 工具=uart_putc
+[ 315.4s]    -> FINAL 148 字节，队列剩 1
+[ 316.2s] #316 tool_calls 工具=uart_putc
+[ 316.2s]    -> FINAL 148 字节，队列剩 1
+[ 317.0s] #317 tool_calls 工具=uart_putc
+[ 317.0s]    -> FINAL 148 字节，队列剩 1
+[ 317.7s] #318 tool_calls 工具=uart_putc
+[ 317.7s]    -> FINAL 148 字节，队列剩 1
+[ 318.7s] #319 tool_calls 工具=uart_putc
+[ 318.7s]    -> FINAL 148 字节，队列剩 1
+[ 320.0s] #320 tool_calls 工具=uart_putc
+[ 320.0s]    -> FINAL 150 字节，队列剩 1
+[ 321.2s] #321 stop 文本=已完成：
+- 用 uart_putc 逐字符打印了 `Agent`（含换行）。
+
+[ 321.2s]    -> FINAL 212 字节，队列剩 1
+[ 322.5s] #322 stop 文本=已完成：
+
+- 用 `uart_putc` 逐字符打印了 **Agent** 并
+[ 322.5s]    -> FINAL 249 字节，队列剩 1
+[ 323.7s] #323 stop 文本=已完成：
+
+- 用 `uart_putc` 逐字符打印了 **Agent**（含
+[ 323.7s]    -> FINAL 254 字节，队列剩 1
+[ 324.7s] #324 stop 文本=已完成：
+
+- 用 `uart_putc` 逐字符打印了 **Agent** 并
+[ 324.7s]    -> FINAL 249 字节，队列剩 1
+[ 325.6s] #325 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 325.6s]    -> FINAL 441 字节，队列剩 1
+[ 326.3s] #326 tool_calls 工具=list_tools
+[ 326.3s]    -> FINAL 182 字节，队列剩 1
+[ 327.4s] #327 tool_calls 工具=define_tool,define_tool,define_tool
+[ 327.4s]    -> FINAL 477 字节，队列剩 1
+[ 328.7s] #328 tool_calls 工具=define_tool
+[ 328.7s]    -> FINAL 177 字节，队列剩 1
+[ 329.5s] #329 tool_calls 工具=define_tool
+[ 329.5s]    -> FINAL 184 字节，队列剩 1
+[ 330.0s]   [队列] 0 块 定时器=off
+[ 330.0s] 状态：请求=330 工具轮=270 错误=0 token in/out=313800/19173
+[ 330.3s] #330 tool_calls 工具=uart_putc
+[ 330.3s]    -> FINAL 195 字节，队列剩 1
+[ 331.1s] #331 tool_calls 工具=uart_putc
+[ 331.1s]    -> FINAL 148 字节，队列剩 1
+[ 331.8s] #332 tool_calls 工具=uart_putc
+[ 331.8s]    -> FINAL 148 字节，队列剩 1
+[ 332.5s] #333 tool_calls 工具=uart_putc
+[ 332.5s]    -> FINAL 148 字节，队列剩 1
+[ 333.1s] #334 tool_calls 工具=uart_putc
+[ 333.1s]    -> FINAL 148 字节，队列剩 1
+[ 334.0s] #335 tool_calls 工具=nl
+[ 334.0s]    -> FINAL 129 字节，队列剩 1
+[ 335.0s] #336 stop 文本=完成：
+
+- 已用 `uart_putc` 逐个打印出 `Agent`。
+- 已
+[ 335.0s]    -> FINAL 234 字节，队列剩 1
+[ 337.6s] #337 stop 文本=已完成：
+
+- 用 `uart_putc` 逐个字符打印出 **Agent**
+
+[ 337.6s]    -> FINAL 239 字节，队列剩 1
+[ 338.6s] #338 stop 文本=已完成：
+
+- 用 `uart_putc` 逐个字符打印出 **Agent**
+
+[ 338.6s]    -> FINAL 239 字节，队列剩 1
+[ 339.7s] #339 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 339.7s]    -> FINAL 348 字节，队列剩 1
+[ 341.1s] #340 tool_calls 工具=list_tools
+[ 341.1s]    -> FINAL 182 字节，队列剩 1
+[ 342.9s] #341 tool_calls 工具=define_tool,define_tool,define_tool
+[ 342.9s]    -> FINAL 490 字节，队列剩 1
+[ 344.2s] #342 tool_calls 工具=define_tool
+[ 344.2s]    -> FINAL 177 字节，队列剩 1
+[ 345.0s]   [队列] 0 块 定时器=off
+[ 345.0s] 状态：请求=343 工具轮=279 错误=0 token in/out=326669/19917
+[ 345.3s] #343 tool_calls 工具=define_tool
+[ 345.3s]    -> FINAL 184 字节，队列剩 1
+[ 346.4s] #344 tool_calls 工具=uart_putc
+[ 346.4s]    -> FINAL 175 字节，队列剩 1
+[ 347.2s] #345 tool_calls 工具=uart_putc
+[ 347.2s]    -> FINAL 148 字节，队列剩 1
+[ 347.8s] #346 tool_calls 工具=uart_putc
+[ 347.8s]    -> FINAL 148 字节，队列剩 1
+[ 348.7s] #347 tool_calls 工具=uart_putc
+[ 348.7s]    -> FINAL 148 字节，队列剩 1
+[ 349.5s] #348 tool_calls 工具=uart_putc
+[ 349.5s]    -> FINAL 148 字节，队列剩 1
+[ 350.9s] #349 stop 文本=已完成：控制台打印出 `Agent`，并且 hello、nl、sep 三个工具都
+[ 350.9s]    -> FINAL 222 字节，队列剩 1
+[ 352.5s] #350 stop 文本=已完成：
+
+- 用 `uart_putc` 依次打印出 `A`、`g`、`e`、
+[ 352.5s]    -> FINAL 282 字节，队列剩 1
+[ 353.8s] #351 stop 文本=已完成：
+
+- 打印名字：`A` `g` `e` `n` `t` → **Age
+[ 353.8s]    -> FINAL 225 字节，队列剩 1
+[ 354.8s] #352 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 354.8s]    -> FINAL 281 字节，队列剩 1
+[ 355.8s] #353 tool_calls 工具=list_tools
+[ 355.8s]    -> FINAL 137 字节，队列剩 1
+[ 356.8s] #354 tool_calls 工具=define_tool
+[ 356.8s]    -> FINAL 194 字节，队列剩 1
+[ 357.6s] #355 tool_calls 工具=define_tool
+[ 357.6s]    -> FINAL 177 字节，队列剩 1
+[ 358.5s] #356 tool_calls 工具=define_tool
+[ 358.5s]    -> FINAL 184 字节，队列剩 1
+[ 359.4s] #357 tool_calls 工具=uart_putc
+[ 359.4s]    -> FINAL 169 字节，队列剩 1
+[ 360.0s]   [队列] 0 块 定时器=off
+[ 360.0s] 状态：请求=358 工具轮=290 错误=0 token in/out=340764/20681
+[ 360.4s] #358 tool_calls 工具=uart_putc
+[ 360.4s]    -> FINAL 148 字节，队列剩 1
+[ 361.8s] #359 tool_calls 工具=uart_putc
+[ 361.8s]    -> FINAL 148 字节，队列剩 1
+[ 362.8s] #360 tool_calls 工具=uart_putc
+[ 362.8s]    -> FINAL 148 字节，队列剩 1
+[ 363.8s] #361 tool_calls 工具=uart_putc
+[ 363.8s]    -> FINAL 148 字节，队列剩 1
+[ 364.9s] #362 tool_calls 工具=uart_putc
+[ 364.9s]    -> FINAL 150 字节，队列剩 1
+[ 366.0s] #363 stop 文本=完成：控制台已打印 `Agent`，并重新定义了 hello、nl、sep 三个
+[ 366.0s]    -> FINAL 142 字节，队列剩 1
+[ 366.7s] #364 stop 文本=已完成：
+
+- 用 `uart_putc` 逐字符打印了 `Agent`（含换行
+[ 366.7s]    -> FINAL 234 字节，队列剩 1
+[ 367.6s] #365 stop 文本=- `sep` → 打印 `---`
+[ 367.6s]    -> FINAL 77 字节，队列剩 1
+[ 368.6s] #366 stop 文本=三个工具均已重定义成功（返回 redefined）。
+[ 368.6s]    -> FINAL 111 字节，队列剩 1
+[ 369.5s] #367 stop 文本=任务完成。
+[ 369.5s]    -> FINAL 68 字节，队列剩 1
+[ 370.3s] #368 stop 文本=任务已完成，无后续操作。
+[ 370.3s]    -> FINAL 89 字节，队列剩 1
+[ 371.4s] #369 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 371.4s]    -> FINAL 309 字节，队列剩 1
+[ 372.4s] #370 tool_calls 工具=list_tools
+[ 372.4s]    -> FINAL 182 字节，队列剩 1
+[ 373.5s] #371 tool_calls 工具=define_tool,define_tool,define_tool
+[ 373.5s]    -> FINAL 490 字节，队列剩 1
+[ 374.7s] #372 tool_calls 工具=define_tool
+[ 374.7s]    -> FINAL 177 字节，队列剩 1
+[ 375.0s]   [队列] 0 块 定时器=off
+[ 375.0s] 状态：请求=373 工具轮=298 错误=0 token in/out=356469/21324
+[ 375.5s] #373 tool_calls 工具=define_tool
+[ 375.5s]    -> FINAL 184 字节，队列剩 1
+[ 376.7s] #374 tool_calls 工具=uart_putc
+[ 376.7s]    -> FINAL 189 字节，队列剩 1
+[ 377.4s] #375 tool_calls 工具=uart_putc
+[ 377.4s]    -> FINAL 148 字节，队列剩 1
+[ 378.2s] #376 tool_calls 工具=uart_putc
+[ 378.2s]    -> FINAL 148 字节，队列剩 1
+[ 379.2s] #377 tool_calls 工具=uart_putc
+[ 379.2s]    -> FINAL 148 字节，队列剩 1
+[ 379.9s] #378 tool_calls 工具=uart_putc
+[ 379.9s]    -> FINAL 148 字节，队列剩 1
+[ 380.5s] #379 tool_calls 工具=nl
+[ 380.6s]    -> FINAL 129 字节，队列剩 1
+[ 381.7s] #380 stop 文本=完成：
+
+- 用 uart_putc 逐字符打印了 `Agent` 并换行。
+-
+[ 381.7s]    -> FINAL 242 字节，队列剩 1
+[ 382.7s] #381 stop 文本=已完成：
+
+- 用 uart_putc 逐字符打印了名字 **Agent**（A
+[ 382.7s]    -> FINAL 320 字节，队列剩 1
+[ 383.8s] #382 stop 文本=已完成：
+
+- 用 uart_putc 逐字符打印了名字 **Agent**（A
+[ 383.8s]    -> FINAL 321 字节，队列剩 1
+[ 384.6s] #383 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 384.6s]    -> FINAL 288 字节，队列剩 1
+[ 385.4s] #384 tool_calls 工具=list_tools
+[ 385.4s]    -> FINAL 182 字节，队列剩 1
+[ 386.8s] #385 tool_calls 工具=define_tool,define_tool,define_tool
+[ 386.8s]    -> FINAL 493 字节，队列剩 1
+[ 387.8s] #386 tool_calls 工具=define_tool
+[ 387.8s]    -> FINAL 177 字节，队列剩 1
+[ 388.7s] #387 tool_calls 工具=define_tool
+[ 388.7s]    -> FINAL 184 字节，队列剩 1
+[ 389.8s] #388 tool_calls 工具=uart_putc
+[ 389.8s]    -> FINAL 195 字节，队列剩 1
+[ 390.0s]   [队列] 0 块 定时器=off
+[ 390.0s] 状态：请求=389 工具轮=310 错误=0 token in/out=372004/22282
+[ 391.1s] #389 tool_calls 工具=uart_putc
+[ 391.1s]    -> FINAL 148 字节，队列剩 1
+[ 391.7s] #390 tool_calls 工具=uart_putc
+[ 391.7s]    -> FINAL 148 字节，队列剩 1
+[ 392.5s] #391 tool_calls 工具=uart_putc
+[ 392.5s]    -> FINAL 148 字节，队列剩 1
+[ 393.4s] #392 tool_calls 工具=uart_putc
+[ 393.4s]    -> FINAL 148 字节，队列剩 1
+[ 394.3s] #393 tool_calls 工具=uart_putc
+[ 394.3s]    -> FINAL 150 字节，队列剩 1
+[ 395.4s] #394 stop 文本=完成：
+
+- 用 `uart_putc` 逐字符打印了 `Agent` 并换行。
+[ 395.4s]    -> FINAL 244 字节，队列剩 1
+[ 396.3s] #395 stop 文本=完成。
+
+- 已用 `uart_putc` 逐字符打印名字 **Agent** 
+[ 396.3s]    -> FINAL 252 字节，队列剩 1
+[ 397.2s] #396 stop 文本=完成。
+
+- 用 `uart_putc` 逐字符打印了名字 **Agent**（
+[ 397.2s]    -> FINAL 274 字节，队列剩 1
+[ 398.2s] #397 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 398.2s]    -> FINAL 310 字节，队列剩 1
+[ 398.8s] #398 tool_calls 工具=list_tools
+[ 398.8s]    -> FINAL 170 字节，队列剩 1
+[ 399.6s] #399 tool_calls 工具=uart_putc
+[ 399.6s]    -> FINAL 195 字节，队列剩 1
+[ 400.6s] #400 tool_calls 工具=uart_putc
+[ 400.6s]    -> FINAL 148 字节，队列剩 1
+[ 401.9s] #401 tool_calls 工具=uart_putc
+[ 401.9s]    -> FINAL 148 字节，队列剩 1
+[ 402.6s] #402 tool_calls 工具=uart_putc
+[ 402.6s]    -> FINAL 148 字节，队列剩 1
+[ 403.5s] #403 tool_calls 工具=uart_putc
+[ 403.5s]    -> FINAL 148 字节，队列剩 1
+[ 404.4s] #404 tool_calls 工具=define_tool
+[ 404.4s]    -> FINAL 250 字节，队列剩 1
+[ 405.0s]   [队列] 0 块 定时器=off
+[ 405.0s] 状态：请求=405 工具轮=322 错误=0 token in/out=387553/23070
+[ 405.7s] #405 tool_calls 工具=define_tool
+[ 405.7s]    -> FINAL 177 字节，队列剩 1
+[ 406.5s] #406 tool_calls 工具=define_tool
+[ 406.5s]    -> FINAL 184 字节，队列剩 1
+[ 407.6s] #407 tool_calls 工具=hello
+[ 407.6s]    -> FINAL 159 字节，队列剩 1
+[ 408.5s] #408 tool_calls 工具=sep
+[ 408.5s]    -> FINAL 130 字节，队列剩 1
+[ 409.5s] #409 tool_calls 工具=nl
+[ 409.5s]    -> FINAL 129 字节，队列剩 1
+[ 410.6s] #410 stop 文本=完成：
+
+- 用 uart_putc 逐字符打印了名字 **Agent**。
+-
+[ 410.6s]    -> FINAL 255 字节，队列剩 1
+[ 411.5s] #411 stop 文本=已完成：
+
+- 用 uart_putc 逐字符打印了名字 **Agent**。
+
+[ 411.5s]    -> FINAL 258 字节，队列剩 1
+[ 412.7s] #412 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 412.7s]    -> FINAL 314 字节，队列剩 1
+[ 413.7s] #413 tool_calls 工具=list_tools
+[ 413.7s]    -> FINAL 176 字节，队列剩 1
+[ 414.7s] #414 tool_calls 工具=define_tool,define_tool,define_tool
+[ 414.7s]    -> FINAL 477 字节，队列剩 1
+[ 415.9s] #415 tool_calls 工具=define_tool
+[ 415.9s]    -> FINAL 177 字节，队列剩 1
+[ 417.2s] #416 tool_calls 工具=define_tool
+[ 417.2s]    -> FINAL 184 字节，队列剩 1
+[ 418.2s] #417 tool_calls 工具=uart_putc
+[ 418.2s]    -> FINAL 189 字节，队列剩 1
+[ 419.2s] #418 tool_calls 工具=uart_putc
+[ 419.2s]    -> FINAL 148 字节，队列剩 1
+[ 420.0s]   [队列] 0 块 定时器=off
+[ 420.0s] 状态：请求=419 工具轮=333 错误=0 token in/out=401459/23855
+[ 420.1s] #419 tool_calls 工具=uart_putc
+[ 420.1s]    -> FINAL 148 字节，队列剩 1
+[ 421.0s] #420 tool_calls 工具=uart_putc
+[ 421.0s]    -> FINAL 148 字节，队列剩 1
+[ 421.7s] #421 tool_calls 工具=uart_putc
+[ 421.7s]    -> FINAL 148 字节，队列剩 1
+[ 422.9s] #422 tool_calls 工具=uart_putc
+[ 422.9s]    -> FINAL 150 字节，队列剩 1
+[ 423.6s] #423 stop 文本=完成：
+- 已用 uart_putc 逐字符打印 `Agent` 并换行。
+- 
+[ 423.6s]    -> FINAL 204 字节，队列剩 1
+[ 424.9s] #424 stop 文本=已完成：
+- 用 uart_putc 打印了 `Agent` 并换行。
+- 覆盖
+[ 424.9s]    -> FINAL 184 字节，队列剩 1
+[ 425.8s] #425 stop 文本=任务完成。
+[ 425.8s]    -> FINAL 68 字节，队列剩 1
+[ 427.1s] #426 stop 文本=已完成目标：打印了 `Agent`，并覆盖定义了 hello、nl、sep 三个
+[ 427.1s]    -> FINAL 142 字节，队列剩 1
+[ 428.1s] #427 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 428.1s]    -> FINAL 289 字节，队列剩 1
+[ 428.7s] #428 tool_calls 工具=list_tools
+[ 428.7s]    -> FINAL 182 字节，队列剩 1
+[ 430.6s] #429 tool_calls 工具=define_tool,define_tool,define_tool
+[ 430.6s]    -> FINAL 477 字节，队列剩 1
+[ 431.5s] #430 tool_calls 工具=define_tool
+[ 431.5s]    -> FINAL 177 字节，队列剩 1
+[ 432.5s] #431 tool_calls 工具=define_tool
+[ 432.5s]    -> FINAL 184 字节，队列剩 1
+[ 433.5s] #432 tool_calls 工具=uart_putc
+[ 433.5s]    -> FINAL 175 字节，队列剩 1
+[ 434.3s] #433 tool_calls 工具=uart_putc
+[ 434.3s]    -> FINAL 148 字节，队列剩 1
+[ 435.0s]   [队列] 0 块 定时器=off
+[ 435.0s] 状态：请求=434 工具轮=343 错误=0 token in/out=416508/24587
+[ 435.4s] #434 tool_calls 工具=uart_putc
+[ 435.4s]    -> FINAL 148 字节，队列剩 1
+[ 436.6s] #435 tool_calls 工具=uart_putc
+[ 436.6s]    -> FINAL 148 字节，队列剩 1
+[ 437.2s] #436 tool_calls 工具=uart_putc
+[ 437.2s]    -> FINAL 148 字节，队列剩 1
+[ 438.1s] #437 tool_calls 工具=uart_putc
+[ 438.1s]    -> FINAL 150 字节，队列剩 1
+[ 438.9s] #438 stop 文本=完成：
+
+- 已用 uart_putc 逐字符打印 `Agent` 并换行。
+-
+[ 438.9s]    -> FINAL 242 字节，队列剩 1
+[ 439.7s] #439 stop 文本=完成：
+
+- 已用 uart_putc 逐字符打印 `Agent` 并换行。
+-
+[ 439.7s]    -> FINAL 242 字节，队列剩 1
+[ 440.8s] #440 stop 文本=完成：
+
+- 已用 uart_putc 逐字符打印 `Agent` 并换行。
+-
+[ 440.8s]    -> FINAL 242 字节，队列剩 1
+[ 442.2s] #441 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 442.2s]    -> FINAL 336 字节，队列剩 1
+[ 443.1s] #442 tool_calls 工具=list_tools
+[ 443.1s]    -> FINAL 170 字节，队列剩 1
+[ 444.4s] #443 tool_calls 工具=define_tool,define_tool,define_tool
+[ 444.4s]    -> FINAL 477 字节，队列剩 1
+[ 445.7s] #444 tool_calls 工具=define_tool
+[ 445.7s]    -> FINAL 177 字节，队列剩 1
+[ 446.8s] #445 tool_calls 工具=define_tool
+[ 446.8s]    -> FINAL 184 字节，队列剩 1
+[ 447.8s] #446 tool_calls 工具=uart_putc
+[ 447.8s]    -> FINAL 175 字节，队列剩 1
+[ 449.2s] #447 tool_calls 工具=uart_putc
+[ 449.2s]    -> FINAL 148 字节，队列剩 1
+[ 450.0s]   [队列] 0 块 定时器=off
+[ 450.0s] 状态：请求=448 工具轮=353 错误=0 token in/out=430231/25419
+[ 450.4s] #448 tool_calls 工具=uart_putc
+[ 450.4s]    -> FINAL 148 字节，队列剩 1
+[ 451.7s] #449 tool_calls 工具=uart_putc
+[ 451.7s]    -> FINAL 148 字节，队列剩 1
+[ 452.7s] #450 tool_calls 工具=uart_putc
+[ 452.7s]    -> FINAL 148 字节，队列剩 1
+[ 453.7s] #451 tool_calls 工具=nl
+[ 453.7s]    -> FINAL 129 字节，队列剩 1
+[ 454.4s] #452 stop 文本=完成：已用 uart_putc 逐字符打印出 `Agent`，并覆盖定义了 he
+[ 454.4s]    -> FINAL 159 字节，队列剩 1
+[ 455.9s] #453 stop 文本=已完成：
+
+- 打印名字：`Agent`（逐字符 uart_putc）
+- 覆盖
+[ 455.9s]    -> FINAL 230 字节，队列剩 1
+[ 456.9s] #454 stop 文本=已完成：
+
+- 打印名字：`Agent`（逐字符 uart_putc）
+- 覆盖
+[ 456.9s]    -> FINAL 230 字节，队列剩 1
+[ 458.1s] #455 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 458.1s]    -> FINAL 297 字节，队列剩 1
+[ 459.0s] #456 tool_calls 工具=list_tools
+[ 459.0s]    -> FINAL 182 字节，队列剩 1
+[ 461.3s] #457 tool_calls 工具=define_tool,define_tool,define_tool
+[ 461.3s]    -> FINAL 490 字节，队列剩 1
+[ 462.6s] #458 tool_calls 工具=define_tool
+[ 462.6s]    -> FINAL 177 字节，队列剩 1
+[ 464.1s] #459 tool_calls 工具=define_tool
+[ 464.1s]    -> FINAL 184 字节，队列剩 1
+[ 464.9s] #460 tool_calls 工具=uart_putc
+[ 464.9s]    -> FINAL 175 字节，队列剩 1
+[ 465.0s]   [队列] 0 块 定时器=off
+[ 465.0s] 状态：请求=461 工具轮=362 错误=0 token in/out=442842/26141
+[ 465.8s] #461 tool_calls 工具=uart_putc
+[ 465.8s]    -> FINAL 148 字节，队列剩 1
+[ 466.6s] #462 tool_calls 工具=uart_putc
+[ 466.6s]    -> FINAL 148 字节，队列剩 1
+[ 467.3s] #463 tool_calls 工具=uart_putc
+[ 467.3s]    -> FINAL 148 字节，队列剩 1
+[ 468.4s] #464 tool_calls 工具=uart_putc
+[ 468.4s]    -> FINAL 148 字节，队列剩 1
+[ 469.4s] #465 tool_calls 工具=uart_putc
+[ 469.4s]    -> FINAL 150 字节，队列剩 1
+[ 470.3s] #466 stop 文本=完成：
+
+- 已用 `uart_putc` 逐字符打印 `Agent`（含换行）
+[ 470.3s]    -> FINAL 249 字节，队列剩 1
+[ 471.6s] #467 stop 文本=已完成：
+
+- 用 `uart_putc` 逐字符打印了 `Agent` 并换行
+[ 471.6s]    -> FINAL 247 字节，队列剩 1
+[ 472.8s] #468 stop 文本=已完成：
+
+- 用 `uart_putc` 逐字符打印了 `Agent` 并换行
+[ 472.8s]    -> FINAL 247 字节，队列剩 1
+[ 473.7s] #469 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 473.7s]    -> FINAL 291 字节，队列剩 1
+[ 474.9s] #470 tool_calls 工具=list_tools
+[ 474.9s]    -> FINAL 182 字节，队列剩 1
+[ 475.7s] #471 tool_calls 工具=define_tool
+[ 475.8s]    -> FINAL 237 字节，队列剩 1
+[ 476.9s] #472 tool_calls 工具=define_tool
+[ 476.9s]    -> FINAL 196 字节，队列剩 1
+[ 477.5s] #473 tool_calls 工具=define_tool
+[ 477.5s]    -> FINAL 204 字节，队列剩 1
+[ 478.4s] #474 tool_calls 工具=uart_putc
+[ 478.4s]    -> FINAL 195 字节，队列剩 1
+[ 479.2s] #475 tool_calls 工具=uart_putc
+[ 479.2s]    -> FINAL 148 字节，队列剩 1
+[ 480.0s]   [队列] 0 块 定时器=off
+[ 480.0s] 状态：请求=476 工具轮=373 错误=0 token in/out=457601/26918
+[ 480.5s] #476 tool_calls 工具=uart_putc
+[ 480.5s]    -> FINAL 148 字节，队列剩 1
+[ 481.5s] #477 tool_calls 工具=uart_putc
+[ 481.5s]    -> FINAL 148 字节，队列剩 1
+[ 482.5s] #478 tool_calls 工具=uart_putc
+[ 482.5s]    -> FINAL 148 字节，队列剩 1
+[ 483.1s] #479 tool_calls 工具=uart_putc
+[ 483.1s]    -> FINAL 150 字节，队列剩 1
+[ 484.4s] #480 stop 文本=完成：
+
+- 已用 `uart_putc` 逐字符打印出 **Agent**（含
+[ 484.4s]    -> FINAL 323 字节，队列剩 1
+[ 485.5s] #481 stop 文本=完成：
+
+- 已用 `uart_putc` 逐字符打印出 **Agent**（含
+[ 485.5s]    -> FINAL 254 字节，队列剩 1
+[ 486.9s] #482 stop 文本=完成：
+
+- 已用 `uart_putc` 逐字符打印出 **Agent**（含
+[ 486.9s]    -> FINAL 254 字节，队列剩 1
+[ 487.8s] #483 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 487.8s]    -> FINAL 343 字节，队列剩 1
+[ 488.9s] #484 tool_calls 工具=list_tools
+[ 488.9s]    -> FINAL 182 字节，队列剩 1
+[ 490.3s] #485 tool_calls 工具=define_tool,define_tool,define_tool
+[ 490.3s]    -> FINAL 490 字节，队列剩 1
+[ 491.2s] #486 tool_calls 工具=define_tool
+[ 491.2s]    -> FINAL 177 字节，队列剩 1
+[ 492.4s] #487 tool_calls 工具=define_tool
+[ 492.4s]    -> FINAL 184 字节，队列剩 1
+[ 493.7s] #488 tool_calls 工具=uart_putc
+[ 493.7s]    -> FINAL 175 字节，队列剩 1
+[ 494.3s] #489 tool_calls 工具=uart_putc
+[ 494.3s]    -> FINAL 148 字节，队列剩 1
+[ 495.0s]   [队列] 0 块 定时器=off
+[ 495.0s] 状态：请求=490 工具轮=383 错误=0 token in/out=471461/27782
+[ 495.3s] #490 tool_calls 工具=uart_putc
+[ 495.3s]    -> FINAL 148 字节，队列剩 1
+[ 496.2s] #491 tool_calls 工具=uart_putc
+[ 496.2s]    -> FINAL 148 字节，队列剩 1
+[ 497.1s] #492 tool_calls 工具=uart_putc
+[ 497.1s]    -> FINAL 148 字节，队列剩 1
+[ 498.1s] #493 tool_calls 工具=uart_putc
+[ 498.1s]    -> FINAL 150 字节，队列剩 1
+[ 499.2s] #494 stop 文本=完成：
+
+- 已用 `uart_putc` 打印出 `Agent`
+- 已覆盖定
+[ 499.2s]    -> FINAL 225 字节，队列剩 1
+[ 500.3s] #495 stop 文本=已完成：
+
+- 用 `uart_putc` 打印出名字 **Agent**
+- 
+[ 500.3s]    -> FINAL 230 字节，队列剩 1
+[ 501.4s] #496 stop 文本=已完成：
+
+- 用 `uart_putc` 打印出名字 **Agent**
+- 
+[ 501.4s]    -> FINAL 230 字节，队列剩 1
+[ 502.7s] #497 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 502.7s]    -> FINAL 300 字节，队列剩 1
+[ 503.9s] #498 tool_calls 工具=list_tools
+[ 503.9s]    -> FINAL 191 字节，队列剩 1
+[ 505.2s] #499 tool_calls 工具=define_tool,define_tool,define_tool
+[ 505.2s]    -> FINAL 490 字节，队列剩 1
+[ 506.2s] #500 tool_calls 工具=define_tool
+[ 506.2s]    -> FINAL 177 字节，队列剩 1
+[ 507.5s] #501 tool_calls 工具=define_tool
+[ 507.5s]    -> FINAL 184 字节，队列剩 1
+[ 508.1s] #502 tool_calls 工具=uart_putc
+[ 508.1s]    -> FINAL 201 字节，队列剩 1
+[ 508.8s] #503 tool_calls 工具=uart_putc
+[ 508.8s]    -> FINAL 148 字节，队列剩 1
+[ 509.4s] #504 tool_calls 工具=uart_putc
+[ 509.4s]    -> FINAL 148 字节，队列剩 1
+[ 510.0s]   [队列] 0 块 定时器=off
+[ 510.0s] 状态：请求=505 工具轮=394 错误=0 token in/out=486294/28640
+[ 510.4s] #505 tool_calls 工具=uart_putc
+[ 510.4s]    -> FINAL 148 字节，队列剩 1
+[ 511.3s] #506 tool_calls 工具=uart_putc
+[ 511.3s]    -> FINAL 148 字节，队列剩 1
+[ 512.6s] #507 tool_calls 工具=uart_putc
+[ 512.6s]    -> FINAL 150 字节，队列剩 1
+[ 513.5s] #508 stop 文本=完成：
+
+- 已用 uart_putc 逐字符打印 `Agent` 并换行。
+-
+[ 513.5s]    -> FINAL 242 字节，队列剩 1
+[ 514.5s] #509 stop 文本=已完成：
+
+- 用 uart_putc 逐字符打印了名字 **Agent** 并
+[ 514.5s]    -> FINAL 253 字节，队列剩 1
+[ 515.6s] #510 stop 文本=已完成：
+
+- 用 uart_putc 逐字符打印了名字 **Agent**（A
+[ 515.6s]    -> FINAL 275 字节，队列剩 1
+[ 516.4s] #511 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 516.4s]    -> FINAL 338 字节，队列剩 1
+[ 517.3s] #512 tool_calls 工具=list_tools
+[ 517.3s]    -> FINAL 173 字节，队列剩 1
+[ 518.6s] #513 tool_calls 工具=define_tool
+[ 518.6s]    -> FINAL 225 字节，队列剩 1
+[ 519.3s] #514 tool_calls 工具=hello
+[ 519.3s]    -> FINAL 132 字节，队列剩 1
+[ 520.4s] #515 tool_calls 工具=define_tool
+[ 520.4s]    -> FINAL 207 字节，队列剩 1
+[ 522.1s] #516 tool_calls 工具=nl
+[ 522.1s]    -> FINAL 129 字节，队列剩 1
+[ 523.5s] #517 tool_calls 工具=define_tool
+[ 523.5s]    -> FINAL 233 字节，队列剩 1
+[ 524.2s] #518 tool_calls 工具=sep
+[ 524.2s]    -> FINAL 130 字节，队列剩 1
+[ 525.0s] #519 tool_calls 工具=hello
+[ 525.0s]    -> FINAL 213 字节，队列剩 1
+[ 525.0s]   [队列] 1 块 定时器=on
+[ 525.0s] 状态：请求=519 工具轮=405 错误=0 token in/out=500949/29368
+[ 525.6s] #520 tool_calls 工具=nl
+[ 525.6s]    -> FINAL 129 字节，队列剩 1
+[ 526.5s] #521 tool_calls 工具=sep
+[ 526.5s]    -> FINAL 130 字节，队列剩 1
+[ 527.1s] #522 stop 文本=完成。控制台输出：
+
+```
+Agent
+---
+```
+
+- `hello` 
+[ 527.1s]    -> FINAL 236 字节，队列剩 1
+[ 528.1s] #523 stop 文本=完成。控制台输出：
+
+```
+Agent
+---
+```
+
+- `hello` 
+[ 528.1s]    -> FINAL 236 字节，队列剩 1
+[ 528.9s] #524 stop 文本=完成。控制台输出：
+
+```
+Agent
+---
+```
+
+- `hello` 
+[ 528.9s]    -> FINAL 239 字节，队列剩 1
+[ 529.5s] #525 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 529.5s]    -> FINAL 301 字节，队列剩 1
+[ 530.4s] #526 tool_calls 工具=list_tools
+[ 530.4s]    -> FINAL 176 字节，队列剩 1
+[ 531.7s] #527 tool_calls 工具=define_tool,define_tool,define_tool
+[ 531.7s]    -> FINAL 490 字节，队列剩 1
+[ 532.6s] #528 tool_calls 工具=define_tool
+[ 532.6s]    -> FINAL 177 字节，队列剩 1
+[ 533.7s] #529 tool_calls 工具=define_tool
+[ 533.7s]    -> FINAL 184 字节，队列剩 1
+[ 534.5s] #530 tool_calls 工具=uart_putc
+[ 534.5s]    -> FINAL 175 字节，队列剩 1
+[ 535.0s] #531 tool_calls 工具=uart_putc
+[ 535.0s]    -> FINAL 148 字节，队列剩 1
+[ 536.3s] #532 tool_calls 工具=uart_putc
+[ 536.3s]    -> FINAL 148 字节，队列剩 1
+[ 536.9s] #533 tool_calls 工具=uart_putc
+[ 536.9s]    -> FINAL 148 字节，队列剩 1
+[ 537.6s] #534 tool_calls 工具=uart_putc
+[ 537.6s]    -> FINAL 148 字节，队列剩 1
+[ 538.2s] #535 tool_calls 工具=nl
+[ 538.2s]    -> FINAL 129 字节，队列剩 1
+[ 539.0s] #536 stop 文本=完成：
+
+- 已用 uart_putc 打印名字 **Agent**（并换行）。
+[ 539.0s]    -> FINAL 301 字节，队列剩 1
+[ 539.8s] #537 stop 文本=已完成：
+
+- 用 uart_putc 打印了名字 **Agent**。
+- 覆
+[ 539.8s]    -> FINAL 234 字节，队列剩 1
+[ 540.0s]   [队列] 0 块 定时器=off
+[ 540.0s] 状态：请求=538 工具轮=417 错误=0 token in/out=519041/30303
+[ 541.0s] #538 stop 文本=已完成：
+
+- 用 uart_putc 打印了名字 **Agent**。
+- 覆
+[ 541.0s]    -> FINAL 234 字节，队列剩 1
+[ 542.1s] #539 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 542.1s]    -> FINAL 310 字节，队列剩 1
+[ 542.8s] #540 tool_calls 工具=list_tools
+[ 542.8s]    -> FINAL 182 字节，队列剩 1
+[ 543.9s] #541 tool_calls 工具=define_tool,define_tool,define_tool
+[ 543.9s]    -> FINAL 490 字节，队列剩 1
+[ 545.0s] #542 tool_calls 工具=define_tool
+[ 545.0s]    -> FINAL 177 字节，队列剩 1
+[ 545.8s] #543 tool_calls 工具=define_tool
+[ 545.8s]    -> FINAL 184 字节，队列剩 1
+[ 547.1s] #544 tool_calls 工具=uart_putc
+[ 547.1s]    -> FINAL 175 字节，队列剩 1
+[ 548.1s] #545 tool_calls 工具=uart_putc
+[ 548.1s]    -> FINAL 148 字节，队列剩 1
+[ 549.5s] #546 tool_calls 工具=uart_putc
+[ 549.5s]    -> FINAL 148 字节，队列剩 1
+[ 550.7s] #547 tool_calls 工具=uart_putc
+[ 550.7s]    -> FINAL 148 字节，队列剩 1
+[ 551.9s] #548 tool_calls 工具=uart_putc
+[ 551.9s]    -> FINAL 148 字节，队列剩 1
+[ 552.5s] #549 tool_calls 工具=uart_putc
+[ 552.5s]    -> FINAL 150 字节，队列剩 1
+[ 553.5s] #550 stop 文本=完成：
+
+- 已用 `uart_putc` 逐字符打印 `Agent` 并换行。
+[ 553.5s]    -> FINAL 244 字节，队列剩 1
+[ 554.5s] #551 stop 文本=完成。已打印 `Agent`，并覆盖定义了 `hello`（打印 Hello）、
+[ 554.5s]    -> FINAL 184 字节，队列剩 1
+[ 555.0s]   [队列] 0 块 定时器=off
+[ 555.0s] 状态：请求=552 工具轮=427 错误=0 token in/out=532762/31097
+[ 555.7s] #552 stop 文本=已完成目标：
+
+- 用 `uart_putc` 逐字符打印了 `Agent` 并
+[ 555.7s]    -> FINAL 247 字节，队列剩 1
+[ 556.8s] #553 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 556.8s]    -> FINAL 285 字节，队列剩 1
+[ 557.7s] #554 tool_calls 工具=list_tools
+[ 557.7s]    -> FINAL 137 字节，队列剩 1
+[ 558.9s] #555 tool_calls 工具=define_tool,define_tool,define_tool
+[ 558.9s]    -> FINAL 439 字节，队列剩 1
+[ 559.6s] #556 tool_calls 工具=define_tool
+[ 559.6s]    -> FINAL 177 字节，队列剩 1
+[ 560.9s] #557 tool_calls 工具=define_tool
+[ 560.9s]    -> FINAL 184 字节，队列剩 1
+[ 561.6s] #558 tool_calls 工具=uart_putc
+[ 561.6s]    -> FINAL 148 字节，队列剩 1
+[ 562.5s] #559 tool_calls 工具=uart_putc
+[ 562.5s]    -> FINAL 148 字节，队列剩 1
+[ 563.4s] #560 tool_calls 工具=uart_putc
+[ 563.4s]    -> FINAL 148 字节，队列剩 1
+[ 564.6s] #561 tool_calls 工具=uart_putc
+[ 564.6s]    -> FINAL 148 字节，队列剩 1
+[ 566.0s] #562 tool_calls 工具=uart_putc
+[ 566.0s]    -> FINAL 148 字节，队列剩 1
+[ 566.9s] #563 stop 文本=已打印 `Agent`，并覆盖定义了 hello、nl、sep 三个工具。
+[ 566.9s]    -> FINAL 124 字节，队列剩 1
+[ 567.9s] #564 stop 文本=完成：
+
+- 用 uart_putc 逐字符打印了 **Agent**
+- 覆盖
+[ 567.9s]    -> FINAL 220 字节，队列剩 1
+[ 568.5s] #565 stop 文本=完成：
+
+- 用 uart_putc 逐字符打印了 **Agent**
+- 覆盖
+[ 568.5s]    -> FINAL 232 字节，队列剩 1
+[ 569.5s] #566 stop 文本=完成：
+
+- 用 uart_putc 逐字符打印了 **Agent**
+- 覆盖
+[ 569.5s]    -> FINAL 232 字节，队列剩 1
+[ 570.0s]   [队列] 0 块 定时器=off
+[ 570.0s] 状态：请求=567 工具轮=436 错误=0 token in/out=547528/31919
+[ 570.6s] #567 stop 文本=完成：
+
+- 用 uart_putc 逐字符打印了 **Agent**
+- 覆盖
+[ 570.6s]    -> FINAL 232 字节，队列剩 1
+[ 571.6s] #568 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 571.6s]    -> FINAL 295 字节，队列剩 1
+[ 572.3s] #569 tool_calls 工具=list_tools
+[ 572.3s]    -> FINAL 182 字节，队列剩 1
+[ 573.3s] #570 tool_calls 工具=define_tool
+[ 573.3s]    -> FINAL 240 字节，队列剩 1
+[ 574.1s] #571 tool_calls 工具=define_tool
+[ 574.1s]    -> FINAL 177 字节，队列剩 1
+[ 574.9s] #572 tool_calls 工具=define_tool
+[ 574.9s]    -> FINAL 184 字节，队列剩 1
+[ 576.2s] #573 tool_calls 工具=uart_putc
+[ 576.2s]    -> FINAL 175 字节，队列剩 1
+[ 577.2s] #574 tool_calls 工具=uart_putc
+[ 577.2s]    -> FINAL 148 字节，队列剩 1
+[ 578.3s] #575 tool_calls 工具=uart_putc
+[ 578.3s]    -> FINAL 148 字节，队列剩 1
+[ 579.7s] #576 tool_calls 工具=uart_putc
+[ 579.7s]    -> FINAL 148 字节，队列剩 1
+[ 580.9s] #577 tool_calls 工具=uart_putc
+[ 580.9s]    -> FINAL 148 字节，队列剩 1
+[ 581.7s] #578 tool_calls 工具=uart_putc
+[ 581.7s]    -> FINAL 150 字节，队列剩 1
+[ 582.5s] #579 stop 文本=完成：
+
+- 已用 uart_putc 逐字符打印 `Agent` 并换行。
+-
+[ 582.5s]    -> FINAL 242 字节，队列剩 1
+[ 583.9s] #580 stop 文本=已完成：
+
+- 用 uart_putc 逐字符打印了 `Agent` 并换行。
+
+[ 583.9s]    -> FINAL 245 字节，队列剩 1
+[ 584.9s] #581 stop 文本=已完成：
+
+- 用 uart_putc 逐字符打印了 `Agent` 并换行。
+
+[ 584.9s]    -> FINAL 245 字节，队列剩 1
+[ 585.0s]   [队列] 0 块 定时器=off
+[ 585.0s] 状态：请求=582 工具轮=446 错误=0 token in/out=562679/32696
+[ 586.0s] #582 stop 文本=- 目标：用 uart_putc 打印名字 Agent，并覆盖定义 hello、
+[ 586.0s]    -> FINAL 309 字节，队列剩 1
+[ 586.9s] #583 tool_calls 工具=list_tools
+[ 586.9s]    -> FINAL 182 字节，队列剩 1
+[ 588.6s] #584 tool_calls 工具=define_tool,define_tool,define_tool
+[ 588.6s]    -> FINAL 490 字节，队列剩 1
+[ 589.7s] #585 tool_calls 工具=define_tool
+[ 589.7s]    -> FINAL 177 字节，队列剩 1
+[ 590.7s] #586 tool_calls 工具=define_tool
+[ 590.7s]    -> FINAL 184 字节，队列剩 1
+[ 591.3s] #587 tool_calls 工具=uart_putc
+[ 591.3s]    -> FINAL 175 字节，队列剩 1
+[ 592.2s] #588 tool_calls 工具=uart_putc
+[ 592.2s]    -> FINAL 148 字节，队列剩 1
+[ 593.1s] #589 tool_calls 工具=uart_putc
+[ 593.1s]    -> FINAL 148 字节，队列剩 1
+[ 594.0s] #590 tool_calls 工具=uart_putc
+[ 594.0s]    -> FINAL 148 字节，队列剩 1
+[ 594.7s] #591 tool_calls 工具=uart_putc
+[ 594.7s]    -> FINAL 148 字节，队列剩 1
+[ 595.4s] #592 tool_calls 工具=uart_putc
+[ 595.4s]    -> FINAL 150 字节，队列剩 1
+[ 596.8s] #593 stop 文本=完成：
+
+- 已用 `uart_putc` 打印出名字 **Agent**
+- 
+[ 596.8s]    -> FINAL 233 字节，队列剩 1
+[ 597.9s] #594 stop 文本=已完成目标：
+
+1. **打印名字**：通过 `uart_putc` 逐字符输出
+[ 597.9s]    -> FINAL 330 字节，队列剩 1
+[ 598.9s] #595 stop 文本=已完成：
+
+- 用 `uart_putc` 打印出名字 **Agent**
+- 
+[ 598.9s]    -> FINAL 233 字节，队列剩 1

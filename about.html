@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>token-os · 让 token 活在电路上</title>
+<style>
+  :root{
+    --bg:#0a0c10;
+    --panel:#10141b;
+    --line:#1e2530;
+    --text:#c9d1d9;
+    --dim:#7d8896;
+    --green:#7ee787;
+    --amber:#e3b341;
+    --blue:#79c0ff;
+    --red:#ff7b72;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+    line-height:1.75; font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:820px; margin:0 auto; padding:56px 22px 96px}
+  code,.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+
+  header{border-bottom:1px solid var(--line); padding-bottom:28px; margin-bottom:44px}
+  .kicker{color:var(--dim); font-size:13px; letter-spacing:.18em; text-transform:uppercase; font-family:ui-monospace,monospace}
+  h1{
+    font-family:ui-monospace,monospace; font-size:clamp(28px,7vw,44px);
+    margin:.35em 0 .2em; font-weight:600; letter-spacing:-.02em;
+    background:linear-gradient(92deg,#7ee787,#79c0ff 70%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .sub{color:var(--dim); font-size:15px; margin:0}
+
+  h2{
+    font-size:19px; margin:52px 0 14px; font-weight:600;
+    display:flex; align-items:baseline; gap:12px;
+  }
+  h2 .n{font-family:ui-monospace,monospace; font-size:13px; color:var(--amber); font-weight:400}
+  h3{font-size:15px; color:var(--blue); margin:26px 0 8px; font-weight:600}
+  p{margin:12px 0}
+  .dim{color:var(--dim)}
+  strong{color:#e6edf3; font-weight:600}
+  em{font-style:normal; color:var(--amber)}
+
+  blockquote{
+    margin:22px 0; padding:16px 20px; border-left:2px solid var(--green);
+    background:linear-gradient(90deg,rgba(126,231,135,.07),transparent);
+    color:#dbe6f0; border-radius:0 6px 6px 0;
+  }
+  blockquote .big{font-size:17px}
+
+  .term{
+    background:#05070a; border:1px solid var(--line); border-radius:8px;
+    padding:16px 18px; overflow-x:auto; margin:18px 0;
+    font-family:ui-monospace,monospace; font-size:12.5px; line-height:1.7;
+    color:#b8c4d0; white-space:pre;
+  }
+  .term .c{color:var(--dim)}
+  .term .g{color:var(--green)}
+  .term .a{color:var(--amber)}
+  .term .r{color:var(--red)}
+  .term .b{color:var(--blue)}
+
+  table{width:100%; border-collapse:collapse; margin:18px 0; font-size:14.5px}
+  th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{color:var(--dim); font-weight:500; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase}
+  td:first-child{color:#e6edf3; white-space:nowrap}
+
+  .layers{margin:22px 0}
+  .layer{
+    background:var(--panel); border:1px solid var(--line); border-radius:8px;
+    padding:13px 16px; margin:0;
+  }
+  .layer .lt{font-family:ui-monospace,monospace; font-size:13px; color:var(--blue); margin-bottom:2px}
+  .layer .ld{font-size:13.5px; color:var(--dim)}
+  .arrow{text-align:center; color:var(--line); font-size:15px; line-height:1.4; margin:6px 0}
+
+  .cards{display:grid; grid-template-columns:1fr; gap:12px; margin:20px 0}
+  @media(min-width:640px){.cards{grid-template-columns:1fr 1fr}}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:15px 17px}
+  .card .t{font-size:14px; color:#e6edf3; font-weight:600; margin-bottom:5px}
+  .card .d{font-size:13.5px; color:var(--dim); line-height:1.65}
+
+  .warn{
+    border:1px solid rgba(255,123,114,.28); background:rgba(255,123,114,.06);
+    border-radius:8px; padding:16px 18px; margin:20px 0;
+  }
+  .warn .t{color:var(--red); font-size:13px; font-weight:600; letter-spacing:.05em; margin-bottom:8px}
+  .ok{
+    border:1px solid rgba(126,231,135,.22); background:rgba(126,231,135,.05);
+    border-radius:8px; padding:16px 18px; margin:20px 0;
+  }
+  .ok .t{color:var(--green); font-size:13px; font-weight:600; letter-spacing:.05em; margin-bottom:8px}
+
+  ul{padding-left:20px; margin:12px 0}
+  li{margin:7px 0}
+  li::marker{color:var(--dim)}
+
+  .road{margin:20px 0; border-left:1px solid var(--line); padding-left:22px}
+  .step{position:relative; margin:0 0 22px}
+  .step:before{
+    content:""; position:absolute; left:-27px; top:8px; width:9px; height:9px;
+    border-radius:50%; background:var(--bg); border:2px solid var(--line);
+  }
+  .step.now:before{border-color:var(--green); background:var(--green); box-shadow:0 0 0 4px rgba(126,231,135,.12)}
+  .step.next:before{border-color:var(--blue)}
+  .step .st{font-size:14.5px; color:#e6edf3; font-weight:600}
+  .step .sd{font-size:13.5px; color:var(--dim)}
+  .tag{
+    display:inline-block; font-family:ui-monospace,monospace; font-size:10.5px;
+    padding:1px 7px; border-radius:20px; margin-left:8px; vertical-align:2px;
+    border:1px solid var(--line); color:var(--dim);
+  }
+  .tag.done{color:var(--green); border-color:rgba(126,231,135,.4)}
+  .tag.live{color:var(--amber); border-color:rgba(227,179,65,.4)}
+  .tag.todo{color:var(--dim)}
+
+  footer{margin-top:64px; padding-top:24px; border-top:1px solid var(--line); color:var(--dim); font-size:13px}
+  footer .mono{font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">token-os · 项目说明</div>
+  <h1>让 token 活在电路上</h1>
+  <p class="sub">一台没有操作系统的机器，靠云端吐出的 token 自己活着。</p>
+</header>
+
+<blockquote>
+  <p class="big">我不是在写一个"能操作硬件的 AI 助手"。<br>
+  我是在写一台机器，它的心跳、它的记忆、它的决定，全都从一串 token 里长出来。</p>
+</blockquote>
+
+<h2><span class="n">01</span>一句话说清我在干什么</h2>
+
+<p>普通人用 AI：<strong>人 → 聊天框 → 云端 → 屏幕上出现字</strong>。人停在屏幕后面，机器只是显示。</p>
+
+<p>我在做的事：<strong>云端 → 一串 token → 一条自己定义的线 → 一台裸机内核 → 直接写硬件寄存器</strong>。中间没有安卓、没有 Linux、没有浏览器、没有对话窗口。token 到达的那一刻，它就是一段会动的电信号，不是一段被显示的文本。</p>
+
+<h2><span class="n">02</span>它不是这些东西</h2>
+
+<table>
+  <tr><th>常见误解</th><th>实际情况</th></tr>
+  <tr><td>又一个聊天机器人</td><td>没有聊天界面。输出是串口上的字节和寄存器里的电平。</td></tr>
+  <tr><td>树莓派跑个 Linux 再调 API</td><td>没有 Linux。第一条执行的指令是我写的几十行汇编。</td></tr>
+  <tr><td>把模型塞进小设备</td><td>模型永远在云端。本地只有一个内核，负责"接住"它的输出。</td></tr>
+  <tr><td>让 AI 直接控制硬件</td><td>AI 只能请求工具。真正碰寄存器的是确定性代码，有权限、有日志、可回滚。</td></tr>
+</table>
+
+<h2><span class="n">03</span>分层：每一层都是"换能器"</h2>
+
+<p>传统网络栈的分层是<strong>封装/解封装</strong>：加头、剥头，语义只在最顶层出现。这里的每一层不是封装，而是<strong>把一个语义单元翻译成当前物理层该有的形态</strong>。</p>
+
+<div class="layers">
+  <div class="layer">
+    <div class="lt">云端模型</div>
+    <div class="ld">无状态推理。不保存我的会话，只做一次前向计算，吐 token。</div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="layer">
+    <div class="lt">链路帧</div>
+    <div class="ld">我自己定义帧格式：magic + 长度 + 序号 + 载荷 + 校验。上位机只负责搬运，不解释。</div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="layer">
+    <div class="lt">中断</div>
+    <div class="ld">一个字节到达 → 硬件敲门 → 内核被叫醒。token 是<strong>事件</strong>，不是流。</div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="layer">
+    <div class="lt">事件队列</div>
+    <div class="ld">中断只记一笔就走，重活留给主循环。满了会丢，丢了要计数。</div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="layer">
+    <div class="lt">上下文状态机</div>
+    <div class="ld">因果日志、裁剪策略、冷启动恢复。<strong>主副本永远在本机</strong>。</div>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="layer">
+    <div class="lt">工具层 / 寄存器</div>
+    <div class="ld">写前记录旧值，写后读回校验。每一笔都可追溯、可回滚。</div>
+  </div>
+</div>
+
+<p class="dim">这里的"每一层交给 agent 处理"，指的是<strong>元 agent 生成并验证每层的确定性逻辑</strong>，而不是让大模型站在中断里逐条决策——那会把时序搞崩。</p>
+
+<h2><span class="n">04</span>已经能跑的证据</h2>
+
+<p>当前跑在一台软件模拟的 ARM 电脑里（<span class="mono">QEMU</span>，虚拟板子 <span class="mono">virt</span>，CPU <span class="mono">cortex-a72</span>）。这台"假电脑"上电后，执行的第一条指令就是我写的启动汇编。</p>
+
+<div class="term"><span class="c">$ make &amp;&amp; make run</span>
+
+<span class="g">===========================================</span>
+ token-os v2 / 定时器中断驱动
+<span class="g">===========================================</span>
+[init] 向量表已装载
+[init] GIC 中断控制器就绪
+[init] EL1 物理定时器已上弦，周期 1 秒
+[init] 硬件计数器频率 = <span class="a">62500000 Hz</span>
+[init] 开中断，进入事件循环
+
+<span class="g">HEARTBEAT 1</span>
+<span class="g">HEARTBEAT 2</span>
+<span class="g">HEARTBEAT 3</span>
+</div>
+
+<p>这已经不是"程序在跑"，而是<strong>系统在活着</strong>。三个证据：</p>
+
+<h3>① 它真的在睡</h3>
+<p>空转 6 秒，只消耗了 <strong>0.083 秒</strong> CPU（约 1.4%）。没事干的时候它执行 <span class="mono">wfi</span> 把核心挂起，等硬件来敲。之前那种轮询写法，会死死占满一个核心。</p>
+
+<div class="term"><span class="c"># 6 秒实际耗时 vs 消耗的 CPU 时间</span>
+real=6.023   user=0.044   sys=0.039</div>
+
+<h3>② 中断真的会叫醒它</h3>
+<p>心跳不是"自己问时间到了吗"，是硬件定时器每秒敲门一次，内核被叫醒之后才动。</p>
+
+<h3>③ 看门狗真的会叫</h3>
+<p>我做了一个自测版，让主循环<strong>故意卡死 8 秒</strong>：</p>
+
+<div class="term">HEARTBEAT 3
+[自测] 主循环故意卡死 8 秒，看门狗应该报警...
+
+<span class="r">!! 看门狗报警：主循环 5 秒没有响应 !!</span>
+[自测] 卡死结束，主循环恢复
+HEARTBEAT 4
+<span class="c">   (队列里有一条看门狗事件 —— 主循环恢复后才被处理，这就是积压)</span></div>
+
+<p class="dim">注意那句报警是从<strong>中断里</strong>打出来的，不是主循环打的——因为主循环这时候已经死了。这就是"报警必须走独立路径"的实感。</p>
+
+<h2><span class="n">05</span>已经跑过十分钟了</h2>
+
+<p>2026-11-17 早上，跑了两轮：<strong>600 秒 / 600 秒，合计 632 轮请求，零坏帧，零丢帧。</strong></p>
+
+<div class="ok">
+  <div class="t">十分钟的实测结果</div>
+  <table style="margin:12px 0 0">
+    <tr><th>指标</th><th>值</th></tr>
+    <tr><td>运行时长</td><td>600 秒 + 600 秒</td></tr>
+    <tr><td>自动续请求</td><td>250 + 382 轮（内核自己发起的，没人戳它）</td></tr>
+    <tr><td>落地的 token 帧</td><td>173 939 + 118 439</td></tr>
+    <tr><td>链路上走过的字节</td><td>1 384 220 + 941 147</td></tr>
+    <tr><td>校验失败的帧</td><td><strong>0</strong></td></tr>
+    <tr><td>上下文占用（1 MiB 版）</td><td>228 157 / 1 048 576 = <strong>21.8%</strong></td></tr>
+    <tr><td>云端错误</td><td>0</td></tr>
+  </table>
+</div>
+
+<p>这一条链现在是真的通了：<strong>云端 → 帧 → 串口中断 → 本地上下文 → 内核自己决定续下一轮</strong>。全程没有我参与，也没有人点它。</p>
+
+<div class="warn">
+  <div class="t">十分钟暴露出的真问题</div>
+  <p><strong>上下文缓冲区在 170 秒就满了。</strong>64 KiB 装不下三分钟的输出，之后每 5 秒仍然在收 token，但只能记账、不能再存。</p>
+  <p style="margin-bottom:0">这不是 bug，是设计缺口：一台只会"往里塞"的机器迟早会满。真实系统需要<strong>滚动窗口 + 摘要压缩 + 定期落盘</strong>——正好就是我一开始说的那套"上下文管理"。它现在不是一个抽象话题了，它有了一个具体的时间戳：<em>170 秒</em>。</p>
+</div>
+
+<p>成本：约 17.4 万个输出 token 加 10 万左右输入，<strong>一块多钱</strong>。</p>
+
+<h2><span class="n">05b</span>它已经在自己造工具了</h2>
+
+<p>2026-11-17 上午，第二次十分钟：内核里跑的不再是"心跳"，是一个<strong>有工具、有记忆、会自己续命的 agent</strong>。</p>
+
+<div class="ok">
+  <div class="t">十分钟自动运行的实测</div>
+  <table style="margin:12px 0 0">
+    <tr><th>指标</th><th>值</th></tr>
+    <tr><td>模型请求</td><td>582 次</td></tr>
+    <tr><td>工具执行</td><td><strong>456 次</strong></td></tr>
+    <tr><td>自己定义 / 改写工具</td><td><strong>171 个</strong></td></tr>
+    <tr><td>上下文压缩</td><td>184 次（摘要 + 遮蔽，日志一条不删）</td></tr>
+    <tr><td>帧校验失败</td><td>0</td></tr>
+    <tr><td>云端错误</td><td>0</td></tr>
+  </table>
+</div>
+
+<p>它自己造的工具有 <span class="mono">line</span>（横线）、<span class="mono">box</span>（方框）、<span class="mono">hello</span>、<span class="mono">sep</span>（分隔线）、<span class="mono">tag</span>（标签）、<span class="mono">pulse</span>（呼吸灯）……然后自己调用它们，在串口上真的画了出来：</p>
+
+<div class="term"><span class="c">[新工具] sep = u:-;u:-;u:-;u:-;u:-;u:-;u:-;u:-;u:-;u:-</span>
+<span class="c">[工具] sep</span>
+<span class="g">----------</span>
+<span class="c">[新工具] tag = u:[;u:A;u:R;u:M;];u: ;u:o;u:k</span>
+<span class="c">[工具] tag</span>
+<span class="g">[ARM] ok</span></div>
+
+<p class="dim">这套工具不是编译器编出来的：内核里有一个几十行的解释器，把 <span class="mono">u:X</span>（打印字符）、<span class="mono">w:地址,值</span>（写寄存器）、<span class="mono">d:毫秒</span>（延时）拼成的小脚本，当成"新工具"注册、覆盖、调用。<strong>模型在给自己扩能力，内核负责解释执行。</strong></p>
+
+<div class="warn">
+  <div class="t">这一轮踩出来的四个真坑（都修了）</div>
+  <ul style="margin-bottom:0">
+    <li><strong>把重活放进中断</strong>：执行工具、打印、延时都在 ISR 里，串口 FIFO 溢出，下一帧直接丢。改成"中断只拷一帧进作业槽，主循环处理"。</li>
+    <li><strong>帧头魔数撞车</strong>：<span class="mono">A5 5A</span> 会出现在中文 JSON 载荷里，中转"找魔数重同步"会误判。改成状态机解析。</li>
+    <li><strong>一次灌整帧</strong>：4 KB 的帧直接写进 16 字节 FIFO，丢 90%。中转改成 6 字节/1 毫秒慢慢喂。</li>
+    <li><strong>QEMU chardev 会卡死</strong>：偶尔停在"等前台开口"，中断不再来。主循环兜底抽一次 FIFO 就解开。</li>
+  </ul>
+</div>
+
+<h2><span class="n">06</span>路线图</h2>
+
+<div class="road">
+  <div class="step now">
+    <div class="st">阶段一 · 软件模拟<span class="tag done">跑通中</span></div>
+    <div class="sd">QEMU 模拟 ARM 电脑。慢，但零风险、可无限重来。验证启动链、中断、队列、看门狗，以及 token 进出的完整链路。</div>
+  </div>
+  <div class="step next">
+    <div class="st">阶段二 · 硬件虚拟化<span class="tag todo">待做</span></div>
+    <div class="sd">用平板自带的硬件虚拟化（AVF）。速度接近原生，隔离依然存在——内核崩了也伤不到系统本体。</div>
+  </div>
+  <div class="step">
+    <div class="st">阶段三 · 真实硬件<span class="tag todo">待做</span></div>
+    <div class="sd">真板子。只有到这一步，"上下文存在这台机器里"才在物理上完全成立。</div>
+  </div>
+</div>
+
+<h2><span class="n">07</span>五条不能破的原则</h2>
+
+<div class="cards">
+  <div class="card">
+    <div class="t">上下文主副本在本地</div>
+    <div class="d">云端只做无状态计算。会话历史、裁剪策略、恢复逻辑，全在本机。上位机断电，本地状态不丢。</div>
+  </div>
+  <div class="card">
+    <div class="t">key 在机器内部</div>
+    <div class="d">烧进内核镜像。每次请求由内核自己带上。中转脚本连"记住你是谁"都做不到。</div>
+  </div>
+  <div class="card">
+    <div class="t">先写日志，再动硬件</div>
+    <div class="d">任何寄存器写入，写前记旧值，写后读回校验。崩了能查、能回滚、能重放。</div>
+  </div>
+  <div class="card">
+    <div class="t">中断要短</div>
+    <div class="d">中断里只记一笔就走。重活留给主循环。中断里跑慢代码，等于自己丢事件。</div>
+  </div>
+  <div class="card">
+    <div class="t">大模型不在实时路径上</div>
+    <div class="d">决定"怎么配置、异常怎么恢复"时可以问模型；决定"这一拍该写哪个寄存器"时不能。</div>
+  </div>
+  <div class="card">
+    <div class="t">先慢后快，一步步来</div>
+    <div class="d">模拟 → 硬件虚拟化 → 真板子。每一步都要能回滚，每一步都要有日志。</div>
+  </div>
+</div>
+
+<h2><span class="n">08</span>诚实的边界</h2>
+
+<div class="warn">
+  <div class="t">现在还做不到的事</div>
+  <ul style="margin-bottom:0">
+    <li><strong>"机子的硬盘"其实是宿主上的一个文件。</strong>逻辑上上下文归内核所有，物理上还要经过宿主。这条边界要等真板子才消失。</li>
+    <li><strong>中继脚本还不够"自持"。</strong>它需要一个不会随会话消失的家，否则就是"有人在旁边举着电线"。</li>
+    <li><strong>还没有在真板子上验证过时序。</strong>模拟器里对的，真硬件上不一定对。</li>
+    <li><strong>恢复机制还没写。</strong>看门狗现在只会喊，不会把系统拉回来。</li>
+  </ul>
+</div>
+
+<h2><span class="n">09</span>术语表</h2>
+
+<table>
+  <tr><th>词</th><th>在这里的意思</th></tr>
+  <tr><td>裸机</td><td>机器上电后直接跑我写的代码，下面没有操作系统垫着。</td></tr>
+  <tr><td>token</td><td>模型吐出的最小单位。对这台机器来说，它是一个<strong>事件</strong>，不是一个字。</td></tr>
+  <tr><td>中断</td><td>硬件主动叫醒 CPU。系统的"心跳"就是它。</td></tr>
+  <tr><td>寄存器</td><td>CPU 和外设身上的小格子。写进去一个数，硬件就动一下。</td></tr>
+  <tr><td>看门狗</td><td>定时问"你还活着吗"，没人应就报警/复位。</td></tr>
+  <tr><td>wfi</td><td>一条指令：让核心睡下，等中断再醒。</td></tr>
+  <tr><td>上下文</td><td>这台机器"记得"的一切。它决定下一个 token 从什么条件里长出来。</td></tr>
+</table>
+
+<footer>
+  <p>这不是一个产品，是一次把"系统该由谁构成"重新想一遍的实验。</p>
+  <p class="mono dim">token-os v0.2 · QEMU virt / aarch64 / cortex-a72 · 最后更新 2026-11-17</p>
+</footer>
+
+</div>
+</body>
+</html>
